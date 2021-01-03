@@ -44,5 +44,10 @@ Die Sofware wurde unter der Apache Lizenz veröffentlicht und kann über diesen 
 Eventuell wird es eine zweite Version geben, in der eine API Schnittstelle zu einem STT Server aufgebaut wird. (Google Cloud Speech-to-Text).
 Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfen.
 
+## Pinbelegung Raspberry PI Servo und Taster
+***Servomotor:***
+
+***Drucktaster:***
+
 
 

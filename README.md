@@ -1,6 +1,12 @@
 # Helmsteuerung Iron men
 Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironmen Helmes".
 
+Inhaltsverzeichnis:
+  - Funktionsumfang
+  - Plattform
+  - Sprachsteuerung
+  - Pinbelegung GPIO
+
 ## Funktionsumfang
 Steuerung eines Servos.
 Live Bild auf einem HDMI Monitor von einer Raspberry Pi Kamera.

@@ -38,6 +38,8 @@ Die restlichen Angaben beziehen sich auf die Eckdaten von der Raspberry Pi Found
 ## Sprachsteuerung 
 Als Spracherkennung wird die Sofware **Sopare** verwendet.
 Dies ist eine "Sound Pattern Recognition" Software die es erlaubt offline und in echtzeit Sprachbefehle zu verarbeiten.
+Die Sofware wurde unter der Apache Lizenz veröffentlicht und kann über diesen Link aufgerufen werden: 
+[Sopare](https://github.com/bishoph/sopare)
 
 Eventuell wird es eine zweite Version geben, in der eine API Schnittstelle zu einem STT Server aufgebaut wird. (Google Cloud Speech-to-Text).
 Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfen.

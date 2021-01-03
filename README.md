@@ -10,7 +10,7 @@ Die Steuerung erfolgt wahlweise über Sprache, Taster an den GPIO Pins bzw einer
 ## Plattform
 Als Einheit wird ein Raspberry Pi Zero verwendet, bzw ein Raspberry Pi 3.
 
-Aufgrund der schwachen Rechenleitung des Raspberry Pi Zero's wird die Srachsterung auf selbiger Plattform nicht unterstützt.
+Aufgrund der schwachen Rechenleitung des Raspberry Pi Zero's wird die Srachsteuerung auf selbiger Plattform nicht unterstützt.
 
 **Folgende Tabelle zeigt welche Funtkionen auf den jeweiligen Raspberry Pi Modellen unterstützt werden.**
 Getestet wurde die Software lediglich mit dem Raspberry Pi Zero und dem Raspberry Pi 3 Mod. B (v1.2)
@@ -34,5 +34,13 @@ Die restlichen Angaben beziehen sich auf die Eckdaten von der Raspberry Pi Found
 |**Sprachsteuerung**| Content Cell  | Content Cell  |
 |**GPIO Taster**    | Content Cell  | Content Cell  |
 |**Android/IOS App**| Content Cell  | Content Cell  |
+
+## Sprachsteuerung 
+Als Spracherkennung wird die Sofware **Sopare** verwendet.
+Dies ist eine "Sound Pattern Recognition" Software die es erlaubt offline und in echtzeit Sprachbefehle zu verarbeiten.
+
+Eventuell wird es eine zweite Version geben, in der eine API Schnittstelle zu einem STT Server aufgebaut wird. (Google Cloud Speech-to-Text).
+Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfen.
+
 
 

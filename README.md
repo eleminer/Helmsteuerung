@@ -89,7 +89,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Wichtig: 
   
            ssh --> ohne Dateiendung (auch zu finden in diesem Repository)
-  
            wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
   
   -**Optional: Remote Desktop installieren**

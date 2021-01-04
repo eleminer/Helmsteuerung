@@ -16,6 +16,7 @@ _*Inhaltsverzeichnis:*_
     - Tipp: Daten auf den Pi kopieren und herunterladen!
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     - Raspberry Pi Kamera im Setup aktivieren
+    - Erstellung Hotspot (nur auf unterstützter Hardware!)
     
   - Testprogramme für die einzelnen Funktionen
     - Servotest
@@ -102,17 +103,29 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
   Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
   
-  -**Raspberry Pi Kamera im Setup aktivieren**
-      
-      sudo raspi-config --> Interface Option --> Camera
-      
-  
-   -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
+  -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
    
        pip install RPi.GPIO
        
    Mithilfe von diesem Befehl kann das Paket installiert werden.
    Weitere Informationen zu dem Modul findet man hier: [PyPi.org](https://pypi.org/project/RPi.GPIO/)
+   
+  -**Raspberry Pi Kamera im Setup aktivieren**
+      
+      sudo raspi-config --> Interface Option --> Camera
+     
+   -**Erstellung Hotspot (nur auf unterstützter Hardware!)**
+   
+   
+   Der Hotspot wird vom Raspberry aufgebaut und dient dazu die Software mithilfe der Flutter **App** zu **steuern**.
+   Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
+   
+   
+   
+   
+   
+   
+   
    
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test

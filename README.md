@@ -56,4 +56,18 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 ***Drucktaster:***
 
 ## Manuelle Installationsanleitung
-
+  -**Installation von Raspbian**
+  
+   Das offizilelle Image kann mithilfe von dem Pi Imager installiert werden.
+   Download für Windows: [Download](https://downloads.raspberrypi.org/imager/imager_1.5.exe)
+   
+  -**Optinal WPA Config und SSH aktivieren**
+  
+  SSH und WPA Config File erstellen um per WLAN und Putty auf den Pi zugreifen zu können.
+  Vorlage für beide Files befinden sich in diesem Repository.
+  Wichtig: 
+  
+           ssh --> ohne Dateiendung (auch zu finden in diesem Repository)
+  
+           wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
+  

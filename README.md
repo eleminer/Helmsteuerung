@@ -41,21 +41,21 @@ Die restlichen Angaben beziehen sich auf die Eckdaten von der Raspberry Pi Found
 
 |**Funtionen**      | Zero          | Zero W/WH     | 1 Mod. A      | 1 Mod. B      | 
 | ----------------- | ------------- | ------------- | ------------- | ------------- |
-|**Sprachsteuerung**| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-|**GPIO Taster**    | Content Cell  | Content Cell  | First Header  | Second Header |
-|**Android/IOS App**| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|**Sprachsteuerung**| kein Support  | kein Support  | kein Support  | kein Support  |
+|**GPIO Taster**    | ja            | ja            | ja            | ja            |
+|**Android/IOS App**| kein Support  | ja            | kein Support  | kein Support  |
 
 |**Funtionen**      | 1 Mod. B+     | 2 Mod. B      | 2 Mod. B v1.2 | 3 Mod. B      |
 | ----------------- | ------------- | ------------- | ------------- | ------------- |
-|**Sprachsteuerung**| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-|**GPIO Taster**    | Content Cell  | Content Cell  | First Header  | Second Header |
-|**Android/IOS App**| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+|**Sprachsteuerung**| kein Support  | ja            | ja            | ja            |
+|**GPIO Taster**    | ja            | ja            | ja            | ja            |
+|**Android/IOS App**| kein Support  | kein Support  | kein Support  | ja            |
 
 |**Funtionen**      | 3 Mod. B+     | 4 Mod. B      |
 | ----------------- | ------------- | ------------- |
-|**Sprachsteuerung**| Content Cell  | Content Cell  |
-|**GPIO Taster**    | Content Cell  | Content Cell  |
-|**Android/IOS App**| Content Cell  | Content Cell  |
+|**Sprachsteuerung**| ja            | ja            |
+|**GPIO Taster**    | ja            | ja            |
+|**Android/IOS App**| ja            | ja            |
 
 ## Sprachsteuerung 
 Als Spracherkennung wird die Sofware **Sopare** verwendet.

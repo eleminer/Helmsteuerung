@@ -6,6 +6,7 @@ Inhaltsverzeichnis:
   - Plattform
   - Sprachsteuerung
   - Pinbelegung GPIO
+  - Manuelle Installationsanleitung
 
 ## Funktionsumfang
 Steuerung eines Servos.

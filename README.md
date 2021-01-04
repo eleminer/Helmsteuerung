@@ -119,6 +119,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   D.h der Servo wird auf die Posoition gefahren und dann abgeschaltet, er hält nicht aktiv die Position,
   je nachdem welche Last auf dem Servo liegt kann man dies vernachlässichen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
   
-  Als Alternative könnte man eine Hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
+  Als Alternative könnte man gegebenfalls eine hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
   
   

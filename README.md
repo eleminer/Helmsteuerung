@@ -185,3 +185,41 @@ The file will have its original line endings in your working directory
 Muss gegebenfalls nach dem Klonen umbenannt werden um weiterzuarbeiten.
 
 Android APK wurde exportiert und befindet sich im Hauptverzeichnis. 
+
+### App Bedienungsanleitung
+
+Die App ist recht einfach aufgebaut, sie besteht aus neun Buttons.
+
+Davon sind drei Buttons orange, vier rot und zwei gelb.
+
+Die Farben spiegeln Gruppen wieder,
+**Orangfarbene Gruppe** ist für die Steuerung der Grundfunktionen zuständig.
+
+1. Livebild an bzw. aus
+2. Servo Position ändern (0°/180°)
+3. Sprachsteuerung an bzw. aus
+
+Die Buttons ändern jeweils den Zustand der Funktion.
+Standardmäßig ist das Livebild an und die Spracherkennung ausgeschaltet (nach jedem Neustart so)
+Die App erhält kein Feedback vom Programm.
+Falls die App nicht funtionieren sollte, ist zu schauen ob sich das Gerät im richtigen WLAN befindet (nur das eigene Hotspot WLAN wird von der App unterstützt).
+
+Die rotfarbene Gruppe ist für das anlernen der Befehle zuständig.
+Hier können die vier Befehle:
+Servo auf
+Servo zu
+Livebild an
+Livebild aus
+angelernt werden.
+
+Eine mögliche zuordnung der Befehle:
+Servo auf: gesprochen **"Servo auf"**
+Servo zu: gesprochen **"zu"**
+Livebild an: gesprochen **"Bild"**
+Livebild aus: gesprochen **"Schwarz"**
+
+Der Lernprozess kann mehrmals hintereinander gestartet werden um ein immer besseres Ergebnis zu erhalten.
+
+Nach jedem Lernprozess muss das Dictionary erneut "kompiliert" werden.
+Dafür gibt es die gelbe Gruppe.
+Wenn man etwas falsches angelernt hat, dann kann man ebenfalls das komplette Dictionary über den rechten gelben Knopf löschen.

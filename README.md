@@ -149,3 +149,4 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 
 Um die Software gut bedienen zu können wurde eine schlichte Flutter App entwickelt.
 (Mit Flutter können Cross-Plattform Apps in der Programmiersprache Dart entwickelt werden)
+Somit funktioniert die dem Projekt zugehörige App auf Android Smartphones als auch IOS basierenden Endgeräten.

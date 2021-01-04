@@ -11,6 +11,9 @@ Inhaltsverzeichnis:
     - Optional: WPA Config und SSH aktivieren
     - Optional: Remote Desktop installieren
     - Tipp: Daten auf den Pi kopieren und herunterladen!
+    
+  - Testprogramme für die einzelnen Funktionen
+    - Servotest
 
 ## Funktionsumfang
 Steuerung eines Servos.
@@ -90,3 +93,14 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 
   Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
   Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
+  
+  ## Testprogramme für die einzelnen Funktionen
+  ### Servotest
+  servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.
+  Dafür wurden folgende GPIO Pins verwendet:
+  
+    Signal: GPIO21 am Pi
+    
+    Masse: GND am Pi
+    
+    5V: 5Volt am Pi

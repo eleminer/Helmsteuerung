@@ -16,6 +16,7 @@ Inhaltsverzeichnis:
     
   - Testprogramme für die einzelnen Funktionen
     - Servotest
+    - Livebild Test
 
 ## Funktionsumfang
 Steuerung eines Servos.
@@ -109,7 +110,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Weitere Informationen zu dem Modul findet man hier: [PyPi.org](https://pypi.org/project/RPi.GPIO/)
    
   ## Testprogramme für die einzelnen Funktionen
-  ### Servotest
+  ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.
   Dafür wurden folgende GPIO Pins verwendet:
   
@@ -127,6 +128,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   Als Alternative könnte man gegebenfalls eine hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
   
-  ### LiveBild Test
+  ### Livebild Test
   displaylive.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
   

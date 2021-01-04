@@ -165,3 +165,12 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 Um die Software gut bedienen zu können wurde eine schlichte Flutter App entwickelt.
 (Mit Flutter können Cross-Plattform Apps in der Programmiersprache Dart entwickelt werden)
 Somit funktioniert die dem Projekt zugehörige App auf Android Smartphones als auch IOS basierenden Endgeräten.
+
+Wichtig: Dateinahme zu lang bei einer Datei im Flutter Projekt.
+
+warning: LF will be replaced by CRLF in IronmanHelmFlutter/pubspec.lock.
+The file will have its original line endings in your working directory
+[main 30dbafc] added flutter project warning: LF will be replaced by CRLF in IronmanHelmFlutter/android/gradle.properties.
+
+Muss gegebenfalls nach dem Clonen umbenannt werden um weiterzuarbeiten.
+

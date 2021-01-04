@@ -107,7 +107,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.
   Dafür wurden folgende GPIO Pins verwendet:
   
-    Signal: GPIO21 am Pi
+    Signal: GPIO Pin 40 am Pi
     
     Masse: GND am Pi
     

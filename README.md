@@ -133,4 +133,5 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   ### Livebild Test
   displaylive.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
-  
+  Dafür öffnet das Programm ein Vorschaufenster im Vollbild und schließt dieses nach 50 Sekunden wieder.
+  Während diesen 50 Sekunden sollte das Live Bild der Raspberry Pi Kamera sichtbar sein.

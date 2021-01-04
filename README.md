@@ -62,7 +62,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Das offizilelle Image kann mithilfe von dem Pi Imager installiert werden.
    Download für Windows: [Download](https://downloads.raspberrypi.org/imager/imager_1.5.exe)
    
-  -**Optinal WPA Config und SSH aktivieren**
+  -**Optional WPA Config und SSH aktivieren**
   
   SSH und WPA Config File erstellen um per WLAN und Putty auf den Pi zugreifen zu können.
   Vorlage für beide Files befinden sich in diesem Repository.
@@ -72,3 +72,12 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
            wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
   
+  -**Optional: Remote Desktop installieren**
+
+   Remote Desktop installieren zum Testen und Ausprobieren.
+
+      sudo raspi-config --> Desktop Autologin
+      (Die Option befindet sich unter System Options,Boot Auto Login, Desktop Autologin.)
+      sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
+      sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
+      sudo reboot (Neustart)

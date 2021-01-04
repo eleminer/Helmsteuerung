@@ -145,3 +145,4 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   
+![](picturesREADME/ScreenshotApp.png)

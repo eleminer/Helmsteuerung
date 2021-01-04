@@ -26,6 +26,7 @@ _*Inhaltsverzeichnis:*_
     - Livebild Test
     
    - Flutter APP zur Steuerung
+     - App Bedienungsanleitung
 
 ## Funktionsumfang
 Steuerung eines Servos.

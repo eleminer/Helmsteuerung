@@ -11,6 +11,7 @@ Inhaltsverzeichnis:
     - Optional: WPA Config und SSH aktivieren
     - Optional: Remote Desktop installieren
     - Tipp: Daten auf den Pi kopieren und herunterladen!
+    - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     
   - Testprogramme für die einzelnen Funktionen
     - Servotest
@@ -94,6 +95,13 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
   Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
   
+   -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
+   
+       pip install RPi.GPIO
+       
+   Mithilfe von diesem Befehl kann das Paket installiert werden.
+   Weitere Informationen zu dem Modul findet man hier: [PyPi.org](https://pypi.org/project/RPi.GPIO/)
+   
   ## Testprogramme für die einzelnen Funktionen
   ### Servotest
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

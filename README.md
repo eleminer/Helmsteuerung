@@ -112,3 +112,13 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     Masse: GND am Pi
     
     5V: 5Volt am Pi
+
+  Bei dem Servotest wird der Servo auf 90°, 180° und 0° im 3 Sekundentakt gefahren.
+  Wichtig: Der Servo wird nicht permanent mit einem PWM Signal versorgt! Da es sonst aufgrund der softwareseitgen Implementierung zu Timing Probleme kommen kann.
+  (Zittern des Servos)
+  D.h der Servo wird auf die Posoition gefahren und dann abgeschaltet, er hält nicht aktiv die Position,
+  je nachdem welche Last auf dem Servo liegt kann man dies vernachlässichen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
+  
+  Als Alternative könnte man eine Hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
+  
+  

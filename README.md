@@ -146,3 +146,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   
 ![](picturesREADME/ScreenshotApp.png)
+
+Um die Software gut bedienen zu können wurde eine schlichte Flutter App entwickelt.
+(Mit Flutter können Cross-Plattform Apps in der Programmiersprache Dart entwickelt werden)

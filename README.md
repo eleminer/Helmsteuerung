@@ -3,6 +3,8 @@ Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steu
 # Images befinden sich im Ordner Images
     - Benutzername: pi
     - Passwort: 1234
+    - SSID: Ironman Wifi
+    -Wifi-Passwort: 827hd73n28
 #### Videos zu Veranschaulichung der Funktionsweise befinden sich im Ordner Videos!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang

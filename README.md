@@ -88,18 +88,18 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Vorlage für beide Files befinden sich in diesem Repository.
   Wichtig: 
   
-           ssh --> ohne Dateiendung (auch zu finden in diesem Repository)
-           wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
+    ssh --> ohne Dateiendung (auch zu finden in diesem Repository)
+    wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
   
   -**Optional: Remote Desktop installieren**
 
    Remote Desktop installieren zum Testen und Ausprobieren.
 
-      sudo raspi-config --> Desktop Autologin
-      (Die Option befindet sich unter System Options,Boot Auto Login, Desktop Autologin.)
-      sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
-      sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
-      sudo reboot (Neustart)
+    sudo raspi-config --> Desktop Autologin
+    (Die Option befindet sich unter System Options,Boot Auto Login, Desktop Autologin.)
+    sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
+    sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
+    sudo reboot (Neustart)
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 
@@ -136,9 +136,9 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     
    und noch zwei leere Ordner erstellen im Unterordner "sopare"......
     
-        cd sopare
-        mkdir tokens
-        mkdir samples
+      cd sopare
+      mkdir tokens
+      mkdir samples
   
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test

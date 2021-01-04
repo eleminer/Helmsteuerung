@@ -1,7 +1,7 @@
 # Helmsteuerung Ironman ![](picturesREADME/ironman.png)
 Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
 # Images befinden sich im Ordner Images
-    - Benutztername: pi
+    - Benutzername: pi
     - Passwort: 1234
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang

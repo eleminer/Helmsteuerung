@@ -12,6 +12,7 @@ Inhaltsverzeichnis:
     - Optional: Remote Desktop installieren
     - Tipp: Daten auf den Pi kopieren und herunterladen!
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
+    - Raspberry Pi Kamera im Setup aktivieren
     
   - Testprogramme für die einzelnen Funktionen
     - Servotest
@@ -94,6 +95,11 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 
   Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
   Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
+  
+  -**Raspberry Pi Kamera im Setup aktivieren**
+      
+      sudo raspi-config --> Interface Option --> Camera
+      
   
    -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
    

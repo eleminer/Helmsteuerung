@@ -62,7 +62,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Das offizilelle Image kann mithilfe von dem Pi Imager installiert werden.
    Download für Windows: [Download](https://downloads.raspberrypi.org/imager/imager_1.5.exe)
    
-  -**Optional WPA Config und SSH aktivieren**
+  -**Optional: WPA Config und SSH aktivieren**
   
   SSH und WPA Config File erstellen um per WLAN und Putty auf den Pi zugreifen zu können.
   Vorlage für beide Files befinden sich in diesem Repository.

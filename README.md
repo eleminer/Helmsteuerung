@@ -133,10 +133,13 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     sudo apt-get install python-numpy
     sudo apt-get install python-scipy 
     sudo apt-get install python-matplotlib
-   
-   
-   
-   
+    
+   und noch zwei leere Ordner erstellen im Unterordner "sopare"......
+    
+        cd sopare
+        mkdir tokens
+        mkdir samples
+  
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

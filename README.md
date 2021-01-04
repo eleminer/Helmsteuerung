@@ -7,6 +7,10 @@ Inhaltsverzeichnis:
   - Sprachsteuerung
   - Pinbelegung GPIO
   - Manuelle Installationsanleitung
+    - Installation von Raspbian
+    - Optional: WPA Config und SSH aktivieren
+    - Optional: Remote Desktop installieren
+    - Tipp: Daten auf den Pi kopieren und herunterladen!
 
 ## Funktionsumfang
 Steuerung eines Servos.
@@ -81,3 +85,8 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
       sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
       sudo reboot (Neustart)
+      
+  -**Tipp: Daten auf den Pi kopieren und herunterladen!**
+
+  Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
+  Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)

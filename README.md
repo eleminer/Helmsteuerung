@@ -19,6 +19,7 @@ _*Inhaltsverzeichnis:*_
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     - Raspberry Pi Kamera im Setup aktivieren
     - Erstellung Hotspot (nur auf unterstützter Hardware!)
+    - Installation von Sopare Dependencies
     
   - Testprogramme für die einzelnen Funktionen
     - Servotest
@@ -123,8 +124,15 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
    
    
-   
-   
+   -**Installation von Sopare Dependencies**
+        
+        
+    sudo apt-get update
+    sudo apt-get install build-essential 
+    sudo apt-get install python-pyaudio 
+    sudo apt-get install python-numpy
+    sudo apt-get install python-scipy 
+    sudo apt-get install python-matplotlib
    
    
    

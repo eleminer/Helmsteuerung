@@ -174,3 +174,4 @@ The file will have its original line endings in your working directory
 
 Muss gegebenfalls nach dem Klonen umbenannt werden um weiterzuarbeiten.
 
+Android APK wurde exportiert und befindet sich im Hauptverzeichnis. 

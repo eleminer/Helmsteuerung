@@ -146,9 +146,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Dafür wurden folgende GPIO Pins verwendet:
   
     Signal: GPIO Pin 40 am Pi
-    
     Masse: GND am Pi
-    
     5V: 5Volt am Pi
 
   Bei dem Servotest wird der Servo auf 90°, 180° und 0° im 3 Sekundentakt gefahren.

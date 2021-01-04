@@ -136,3 +136,9 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   Dafür öffnet das Programm ein Vorschaufenster im Vollbild und schließt dieses nach 50 Sekunden wieder.
   Während diesen 50 Sekunden sollte das Live Bild der Raspberry Pi Kamera sichtbar sein.
+  
+  Der Display Sleep Mode wird dadurch nicht unterbrochen.
+  D.h der Raspberry geht nach ein paar Minuten ohne Tastatur/Maus eingabe in einen Sleep Mode, mit schwarzem Bild.
+  Das schwarzes Bild wird von dem Live Feed überdeckt und nach dem Test erscheint wieder das schwarze Bild.
+  
+  

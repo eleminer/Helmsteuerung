@@ -172,5 +172,5 @@ warning: LF will be replaced by CRLF in IronmanHelmFlutter/pubspec.lock.
 The file will have its original line endings in your working directory
 [main 30dbafc] added flutter project warning: LF will be replaced by CRLF in IronmanHelmFlutter/android/gradle.properties.
 
-Muss gegebenfalls nach dem Clonen umbenannt werden um weiterzuarbeiten.
+Muss gegebenfalls nach dem Klonen umbenannt werden um weiterzuarbeiten.
 

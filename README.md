@@ -1,5 +1,5 @@
-# Helmsteuerung Iron men
-Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironmen Helmes".
+# Helmsteuerung Ironman ![](picturesREADME/ironman.png)
+Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
 
 Inhaltsverzeichnis:
   - Funktionsumfang

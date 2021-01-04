@@ -127,4 +127,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   Als Alternative könnte man gegebenfalls eine hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
   
+  ### LiveBild Test
+  displaylive.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
   

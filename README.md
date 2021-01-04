@@ -206,17 +206,20 @@ Falls die App nicht funtionieren sollte, ist zu schauen ob sich das Gerät im ri
 
 Die rotfarbene Gruppe ist für das anlernen der Befehle zuständig.
 Hier können die vier Befehle:
-Servo auf
-Servo zu
-Livebild an
-Livebild aus
+    
+    - Servo auf
+    - Servo zu
+    - Livebild an
+    - Livebild aus
+
 angelernt werden.
 
 Eine mögliche zuordnung der Befehle:
-Servo auf: gesprochen **"Servo auf"**
-Servo zu: gesprochen **"zu"**
-Livebild an: gesprochen **"Bild"**
-Livebild aus: gesprochen **"Schwarz"**
+
+    - Servo auf: gesprochen **"Servo auf"**
+    - Servo zu: gesprochen **"zu"**
+    - Livebild an: gesprochen **"Bild"**
+    - Livebild aus: gesprochen **"Schwarz"**
 
 Der Lernprozess kann mehrmals hintereinander gestartet werden um ein immer besseres Ergebnis zu erhalten.
 

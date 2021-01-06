@@ -6,9 +6,17 @@ Herzlichen Dank vorallem an den Entwickler von Sopare!
 
 # Images befinden sich im Ordner Images
     - Benutzername: pi
-    - Passwort: 1234
+    - Passwort: 123456789
+Hotspot Wifi Settings:
+   
     - SSID: Ironman Wifi
-    -Wifi-Passwort: 827hd73n28
+    - Wifi-Passwort: 827hd73n28
+    
+Coding Wifi Settings:
+
+    SSID: Coding
+    Passwort: Raspberry
+    
     
 ## Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
 Siehe Inhaltsverzeichnis!

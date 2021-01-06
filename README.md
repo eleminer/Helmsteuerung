@@ -25,6 +25,7 @@ _*Inhaltsverzeichnis:*_
     - Installation von Sopare Dependencies
     - Erstellung Hotspot (nur auf unterstützter Hardware!)
   - Mikrofon auswählen und Sopare Einstellungen
+    - Alsamixer Standardmikrofon einstellen
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
@@ -144,6 +145,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       mkdir tokens
       mkdir samples
   ## Mikrofon auswählen und Sopare Einstellungen
+  ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgemdem Befehl geöffnet werden kann:
        

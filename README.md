@@ -147,6 +147,11 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Der Hotspot wird vom Raspberry aufgebaut und dient dazu die Software mithilfe der Flutter **App** zu **steuern**.
    Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
    
+   Das erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
+   Nach ca. 7Stunden rumprobieren, bin ich auf ein Porjekt gestoßen welches ich für dieses Projekt verwenden kann.
+   Kurz ausprobiert, funktioniert wie gewollt. ^^
+   Hier gehts zum Raspberry Pi Connect Projekt [RaspberryPiConnect](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/183-raspberry-pi-automatic-hotspot-and-static-hotspot-installer)
+   
    
    -**Installation von Sopare Dependencies**
         

@@ -306,3 +306,12 @@ Der Lernprozess kann mehrmals hintereinander gestartet werden um ein immer besse
 Nach jedem Lernprozess muss das Dictionary erneut "kompiliert" werden.
 Dafür gibt es die gelbe Gruppe.
 Wenn man etwas falsches angelernt hat, dann kann man ebenfalls das komplette Dictionary über den rechten gelben Knopf löschen.
+
+### Besonderheit der App
+
+In der App wurde der einfachheitshalber die URL fest gesetzt, d.h die App funktioniert nur über den WLAN Hotspot.
+Eine Benutzung über ein anderes WLAN ist nicht vorgesehen.
+
+Falls geünscht, kann die URL im main.dart File geändert werden.
+
+![](picturesREADME/URLfix.png)

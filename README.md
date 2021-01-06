@@ -150,8 +150,19 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Das erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
    Nach ca. 7Stunden rumprobieren, bin ich auf ein Porjekt gestoßen welches ich für dieses Projekt verwenden kann.
    Kurz ausprobiert, funktioniert wie gewollt. ^^
+   
    Hier gehts zum Raspberry Pi Connect Projekt [RaspberryPiConnect](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/183-raspberry-pi-automatic-hotspot-and-static-hotspot-installer)
    
+   Zudem gibt es für dieses Projekt ein Installer, mit dem eine einfache Installation möglich ist.
+   
+        curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
+        tar -xzvf AutoHotspot-Setup.tar.gz
+        cd Autohotspot
+        sudo ./autohotspot-setup.sh
+        --> 2 Option wählen für die Installation
+        --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
+        --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
+        --> reboot mit "sudo reboot"
    
    -**Installation von Sopare Dependencies**
         

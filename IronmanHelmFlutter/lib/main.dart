@@ -198,7 +198,7 @@ class _CounterState extends State<ToDo> {
                       child: Padding(
                         padding: const EdgeInsets.only(bottom:10.0),
                         child: FlatButton(
-                          child: Text('Dic. kompilieren '),
+                          child: Text('  D. kompilieren'),
                           color:Colors.yellow,
                           onPressed: () {change8();},
                         ),
@@ -209,7 +209,7 @@ class _CounterState extends State<ToDo> {
                       child: Padding(
                         padding: const EdgeInsets.only(bottom:10.0),
                         child: FlatButton(
-                          child: Text('   Dic. löschen  '),
+                          child: Text('  Dic. löschen   '),
                           color: Colors.yellow,
                           onPressed: () {change9();},
                         ),

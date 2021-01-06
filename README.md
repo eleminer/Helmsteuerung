@@ -248,6 +248,10 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   D.h der Raspberry geht nach ein paar Minuten ohne Tastatur/Maus eingabe in einen Sleep Mode, mit schwarzem Bild.
   Das schwarzes Bild wird von dem Live Feed überdeckt und nach dem Test erscheint wieder das schwarze Bild.
   
+  ### Webserver für HTTP Request Kontrolle (APP)
+  
+  ![](picturesREADME/webserverTestConsole.png)
+  
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   
 ![](picturesREADME/ScreenshotApp.png) ![](picturesREADME/Screenshot_HomeScreen.png)

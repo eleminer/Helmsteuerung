@@ -27,6 +27,8 @@ _*Inhaltsverzeichnis:*_
     - Erstellung Hotspot (nur auf unterstützter Hardware!)
   - Mikrofon auswählen und Sopare Einstellungen
     - Alsamixer Standardmikrofon einstellen
+    - Sopare Unit Test
+    - Sopare Mikrofoneinstellungen
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
@@ -159,6 +161,10 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   ![](picturesREADME/alsamixer.png)
   
   Danach noch mit mit der ESC Taste den Alsamixer verlassen.
+  
+  ### Sopare Unit Test
+  ### Sopare Mikrofoneinstellungen
+  
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

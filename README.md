@@ -110,8 +110,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   -**Update/Upgrade vom System**
     
      sudo apt-get update 
-     sudo apt-get upgrade 
-     sudo rpi-update
+     sudo apt-get upgrade
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 

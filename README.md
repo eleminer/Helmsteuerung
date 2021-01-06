@@ -215,6 +215,10 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
  
  Die Werte (Sample_Rate, Chunk und Threshold) sollten aufgeschrieben oder kopiert werden, da wir diese gleich benötigen.
  
+ Diese werden nun hier eingetragen:
+    
+    nano config/default.ini
+ 
   
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test

@@ -18,8 +18,8 @@ _*Inhaltsverzeichnis:*_
   - Manuelle Installationsanleitung
     - Installation von Raspbian
     - Optional: WPA Config und SSH aktivieren
-    - Optional: Remote Desktop installieren
     - Update/Upgrade vom System
+    - Optional: Remote Desktop installieren
     - Tipp: Daten auf den Pi kopieren und herunterladen!
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     - Raspberry Pi Kamera im Setup aktivieren
@@ -96,6 +96,11 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
     ssh --> ohne Dateiendung (auch zu finden in diesem Repository)
     wpa_supplicant.conf --> SSID und Passswort im Klartext eingeben
+    
+  -**Update/Upgrade vom System**
+    
+     sudo apt-get update 
+     sudo apt-get upgrade
   
   -**Optional: Remote Desktop installieren**
 
@@ -106,11 +111,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
     sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
     sudo reboot (Neustart)
-    
-  -**Update/Upgrade vom System**
-    
-     sudo apt-get update 
-     sudo apt-get upgrade
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 
@@ -137,8 +137,6 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    
    -**Installation von Sopare Dependencies**
         
-        
-    sudo apt-get update
     sudo apt-get install build-essential 
     sudo apt-get install python-pyaudio 
     sudo apt-get install python-numpy

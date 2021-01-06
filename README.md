@@ -19,6 +19,7 @@ _*Inhaltsverzeichnis:*_
     - Installation von Raspbian
     - Optional: WPA Config und SSH aktivieren
     - Optional: Remote Desktop installieren
+    - Update/Upgrade vom System
     - Tipp: Daten auf den Pi kopieren und herunterladen!
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     - Raspberry Pi Kamera im Setup aktivieren
@@ -105,6 +106,12 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     sudo apt-get purge realvnc-vnc-server --> RealVNC aufrung eines Konfliktes deinstallieren.
     sudo apt-get install xrdp --> XRDP installieren (Remote Desktop)
     sudo reboot (Neustart)
+    
+  -**Update/Upgrade vom System**
+    
+     sudo apt-get update 
+     sudo apt-get upgrade 
+     sudo rpi-update
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 

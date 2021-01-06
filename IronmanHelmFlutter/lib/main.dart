@@ -7,7 +7,7 @@ import 'StudentModel.dart';
 
 var paddingScreen =17;
 var one= 10;
-var url = "http://182.0.0.188/";
+var url = "http://10.0.0.5/";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -169,7 +169,7 @@ class _CounterState extends State<ToDo> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Padding(
-                        padding: const EdgeInsets.only(bottom:10.0),
+                        padding: const EdgeInsets.only(bottom:30.0),
                         child: FlatButton(
                           child: Text('   T.Livebild an '),
                           color:Colors.red,
@@ -180,7 +180,7 @@ class _CounterState extends State<ToDo> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Padding(
-                        padding: const EdgeInsets.only(bottom:10.0),
+                        padding: const EdgeInsets.only(bottom:30.0),
                         child: FlatButton(
                           child: Text('   T.Livebild aus'),
                           color: Colors.red,
@@ -198,7 +198,7 @@ class _CounterState extends State<ToDo> {
                       child: Padding(
                         padding: const EdgeInsets.only(bottom:10.0),
                         child: FlatButton(
-                          child: Text('  D. kompilieren'),
+                          child: Text('   D. kompilieren  '),
                           color:Colors.yellow,
                           onPressed: () {change8();},
                         ),
@@ -209,7 +209,7 @@ class _CounterState extends State<ToDo> {
                       child: Padding(
                         padding: const EdgeInsets.only(bottom:10.0),
                         child: FlatButton(
-                          child: Text('  Dic. löschen   '),
+                          child: Text('    Dic. löschen    '),
                           color: Colors.yellow,
                           onPressed: () {change9();},
                         ),

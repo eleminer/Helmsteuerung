@@ -144,7 +144,11 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgemdem Befehl geöffnet werden kann:
        
        alsamixer
-   
+  
+  Mit F6 können wir nun unser Mikrofon auswählen:
+  ![](picturesREADME/alsamixer.png)
+  
+  Danach noch mit mit der ESC Taste den Alsamixer verlassen.
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

@@ -202,6 +202,20 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
         
   ### Sopare Mikrofoneinstellungen
   
+  Nachdem wir Sopare installiert und getestet haben, müssen wir noch die passenden Mikrofoneinstellungen für unser Mikro herausfinden.
+  Dafür nutzen wir einen in Sopare integrierten Audio Test. Während des Testes sollte die Umgebung leise sein, da der Test auch die "Schwellenlautstärke" misst.
+  Der Test kann mit folgendem Befehl gestartet werden:
+  
+    python test/test_audio.py
+    
+    
+ Das Ergebnis sollte so aussehen:
+ 
+ ![](picturesREADME/audioTest.png)
+ 
+ Die Werte (Sample_Rate, Chunk und Threshold) sollten aufgeschrieben oder kopiert werden, da diese gleich in die Einstellungen kopiert werden.
+ 
+  
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

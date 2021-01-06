@@ -139,7 +139,12 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       cd sopare
       mkdir tokens
       mkdir samples
-  
+  ## Mikrofon auswählen und Sopare Einstellungen
+  Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
+  Hierfür nutzen wir das Tool "Alsamixer", welches mit folgemdem Befehl geöffnet werden kann:
+       
+       alsamixer
+   
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

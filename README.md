@@ -7,7 +7,7 @@ Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steu
     - SSID: Ironman Wifi
     -Wifi-Passwort: 827hd73n28
     
-# Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
+## Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
 Siehe Inhaltsverzeichnis!
 #### Videos zu Veranschaulichung der Funktionsweise befinden sich im Ordner Videos!
 _*Inhaltsverzeichnis:*_

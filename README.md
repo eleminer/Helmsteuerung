@@ -14,8 +14,8 @@ Hotspot Wifi Settings:
     
 Coding Wifi Settings:
 
-    SSID: Coding
-    Passwort: Raspberry
+    - SSID: Coding
+    - Passwort: Raspberry
     
     
 ## Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!

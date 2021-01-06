@@ -1,10 +1,14 @@
 # Helmsteuerung Ironman ![](picturesREADME/ironman.png)
 Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
+
 # Images befinden sich im Ordner Images
     - Benutzername: pi
     - Passwort: 1234
     - SSID: Ironman Wifi
     -Wifi-Passwort: 827hd73n28
+    
+# Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
+Siehe Inhaltsverzeichnis!
 #### Videos zu Veranschaulichung der Funktionsweise befinden sich im Ordner Videos!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang

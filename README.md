@@ -1,6 +1,9 @@
 # Helmsteuerung Ironman ![](picturesREADME/ironman.png)
 Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
 
+Dieses Projekt enthält Drittanbieter Software.
+Herzlichen Dank vorallem an den Entwickler von Sopare!
+
 # Images befinden sich im Ordner Images
     - Benutzername: pi
     - Passwort: 1234
@@ -163,6 +166,16 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Danach noch mit mit der ESC Taste den Alsamixer verlassen.
   
   ### Sopare Unit Test
+  Als erstes sollte man einen Unit Test durchführen, um zu schauen ob die Installation von Sopare ohne Fehler funktioniert.
+  
+  **Vielen Dank nochmal an den Entwickler von Sopare für diese tolle Software.**
+  
+  Der Test wird mit folgendem Befehl  gestartet:
+    
+    python sopare.py -u
+    
+  Wenn der Test keinen Fehler ausgibt sonder "unit_tests run successfull!" dann passt alles. Herzlichen Glückwunsch :)
+        
   ### Sopare Mikrofoneinstellungen
   
   ## Testprogramme für die einzelnen Funktionen

@@ -46,6 +46,7 @@ _*Inhaltsverzeichnis:*_
     
    - Flutter APP zur Steuerung
      - App Bedienungsanleitung
+     - Besonderheit der App (Vereinfachung)
 
 ## Funktionsumfang
 Steuerung eines Servos.

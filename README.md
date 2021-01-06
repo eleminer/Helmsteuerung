@@ -43,6 +43,7 @@ _*Inhaltsverzeichnis:*_
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
+    - Webserver für HTTP Request Kontrolle (APP)
     
    - Flutter APP zur Steuerung
      - App Bedienungsanleitung
@@ -250,6 +251,11 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   ### Webserver für HTTP Request Kontrolle (APP)
   
+  Mithilfe dem Python Skript "webserviceTest.py" kann die App und Flask getestet werden.
+  
+  Wenn der Pi sich im Wifi Hotspot Mode befindet und ein Smaprthone im Wifi Netz, sollten App-Eingaben im Terminal sichtbar sein.
+  
+  So sollte das aussehen:
   ![](picturesREADME/webserverTestConsole.png)
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)

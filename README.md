@@ -213,7 +213,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
  
  ![](picturesREADME/audioTest.png)
  
- Die Werte (Sample_Rate, Chunk und Threshold) sollten aufgeschrieben oder kopiert werden, da diese gleich in die Einstellungen kopiert werden.
+ Die Werte (Sample_Rate, Chunk und Threshold) sollten aufgeschrieben oder kopiert werden, da wir diese gleich benötigen.
  
   
   ## Testprogramme für die einzelnen Funktionen

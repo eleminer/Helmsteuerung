@@ -405,6 +405,13 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  Diese Version ist nur für die Kontrolle per GPIO Taster.
  
+ - 3.--> APP_and_GPIO.py
+ 
+ Diese Version ist für die Kontrolle per App und gleichzeitig per GPIO vergesehen.
+ Wichtig: im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen!. 
+ 
+ Dieses Modul gibt es nur für Python3, daher ist diese Version nur mit  Python 3 kompatibel und nicht mit Python2!
+ 
  ## Autostart Option für das gewählte Skript
  
  Crontab ist meiner Meinung nach die einfachste Möglichkeit, Python Programme automatisch beim Starten auszuführen.

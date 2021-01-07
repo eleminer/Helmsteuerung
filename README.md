@@ -48,6 +48,7 @@ _*Inhaltsverzeichnis:*_
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
   - Verbesserungsvorschläge, Features die noch fehlen
+  - **Entwicklermodus**
      
 
 ## Funktionsumfang

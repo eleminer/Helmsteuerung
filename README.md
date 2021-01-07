@@ -272,6 +272,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Wenn der Pi sich im Wifi Hotspot Mode befindet und ein Smaprthone im Wifi Netz, sollten App-Eingaben im Terminal sichtbar sein.
   
   So sollte das aussehen:
+  
   ![](picturesREADME/webserverTestConsole.png)
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)

@@ -20,13 +20,35 @@ ispressed16=0
 touchTime20= int(round(time.time() * 1000))
 touchTime16= int(round(time.time() * 1000))
 millis=0
+argument="hello world"
 
 
 try:
     app = Flask(__name__)
 
     def readSpeechArguments():
-        print("hello marc")
+        print("inside Speech function")
+        global livefeed, servoposition, argument
+        if "live" in argument:
+            print("live from text")
+            livefeed=0
+            live() 
+            argument="hello world"
+        if "aus" in argument:
+            print("aus from text")
+            livefeed=1
+            live() 
+            argument="hello world"
+        if "auf" in argument:
+            print("auf from text")
+            servoposition=1
+            servo()
+            argument="hello world"
+        if "zu" in argument:
+            print("zu from text")
+            servoposition=0
+            servo()
+            argument="hello world"
 
     def getMillis():
         global millis
@@ -90,11 +112,13 @@ try:
             return "ok!"
         app.run(host='0.0.0.0', port= 8090)
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        executor.submit(gpio)
-        executor.submit(appControl)
-        executor.submit(readSpeechArguments)
-        executor.shutdown(wait=False)
+    def main():
+        while True:
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                executor.submit(gpio)
+                executor.submit(appControl)
+                executor.submit(readSpeechArgument)
+                executor.shutdown(wait=False)
     
 
 except KeyboardInterrupt:

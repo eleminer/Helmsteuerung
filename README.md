@@ -51,8 +51,9 @@ _*Inhaltsverzeichnis:*_
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
   - Verbesserungsvorschläge, Features die noch fehlen
-  - **Entwicklermodus**
+  - Entwicklermodus
   - **Versionen von diesem Projekt (nur GPIO Control, nur App Control usw.)**
+  - **Autostart Option für das gewählte Skript**
      
 
 ## Funktionsumfang

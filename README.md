@@ -44,7 +44,8 @@ _*Inhaltsverzeichnis:*_
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
-    - Webserver für HTTP Request Kontrolle (APP) 
+    - Webserver für HTTP Request Kontrolle (APP)
+    - GPIO Taster Test
   - Flutter APP zur Steuerung
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
@@ -274,6 +275,14 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   So sollte das aussehen:
   
   ![](picturesREADME/webserverTestConsole.png)
+  
+  ### GPIO Taster Test
+  
+  Das Tool "gpioTest.py" kann dazu genuzt werden um die GPIO Eingänge des Raspberrys zu testen.
+  
+  Ein Taster wird an GPIO 20 (GPIO.BCM) angeschlossen, im geschlossenem Zustand sollte dieser den Pin gegen Ground ziehen.
+  
+        gpioTest.py
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   

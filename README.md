@@ -340,3 +340,13 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 - "Speech to text Webdienst" einbinden
 - dynamsiche URL für HTTP Dienst
 
+## Entwicklermodus
+
+Wenn kein bekanntes Wlan erreichbar ist, wird automisch der Hotspot aktiviert für den App Zugriff.
+Manchmal ist jedoch eine Internetverbindung notwenig um Pakete oder Plugins installieren zu können.
+Wenn der Raspberry sich in Reichweite des Wlans mit der SSID "Coding" befindet, verbindet er sich mit diesem und baut keinen Hotspot auf.
+
+Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 Hotspot funktion dafür zu nutzen:
+
+![](picturesREADME/hotspotWin10.png)
+

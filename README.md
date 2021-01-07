@@ -52,6 +52,7 @@ _*Inhaltsverzeichnis:*_
      - Besonderheit der App (Vereinfachung)
   - Verbesserungsvorschläge, Features die noch fehlen
   - **Entwicklermodus**
+  - **Versionen von diesem Projekt (nur GPIO Control, nur App Control usw.)**
      
 
 ## Funktionsumfang

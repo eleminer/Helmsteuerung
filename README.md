@@ -363,6 +363,7 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 - App Talkback (Zustand anzeigen in der APP, Fehlerausgabe)
 - "Speech to text Webdienst" einbinden
 - dynamsiche URL für HTTP Dienst
+- globale Variablen entfernen
 
 ## Entwicklermodus
 

@@ -387,3 +387,13 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
 
 ![](picturesREADME/hotspotWin10.png)
 
+## Versionen von diesem Projekt
+ - 1.--> App_Servo_and_LiveCam_Control.py
+ 
+ Diese Version ist nur für die Kontrolle per App.
+ 
+ - 2.--> GPIO_Servo_and_LiveCam_Control.py
+ 
+ Diese Version ist nur für die Kontrolle per GPIO Taster.
+ 
+ 

@@ -24,21 +24,26 @@ millis=0
 
 try:
     app = Flask(__name__)
+
     def readSpeechArguments():
-        global livefeed servoposition
+        global livefeed, servoposition
         f = open("/home/pi/Downloads/arguments.txt", "w")
         if "live" in f.read():
+            print("live from text")
+            livefeed=0
             live() 
-        if "live" in f.read():
+        if "aus" in f.read():
+            print("aus from text")
             livefeed=1
             live() 
         if "auf" in f.read():
+            print("auf from text")
             servoposition=1
             servo()
         if "zu" in f.read():
+            print("zu from text")
             servoposition=0
             servo()
-
 
     def getMillis():
         global millis
@@ -105,6 +110,7 @@ try:
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.submit(gpio)
         executor.submit(appControl)
+        executor.submit(readSpeechArguments)
         executor.shutdown(wait=False)
     
 

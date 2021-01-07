@@ -3,6 +3,7 @@ from flask import request
 import RPi.GPIO as GPIO
 from picamera import PiCamera
 from time import sleep
+from concurrent.futures import ThreadPoolExecutor
 import time
 
 camera = PiCamera()
@@ -73,20 +74,23 @@ try:
             elif input_state16==True and millis-touchTime16>500:
                 ispressed16=0
 
+    def appControl():
+        @app.route('/SB')
+        def SB():
+            AppData = request.args.get('Data')
+            print(AppData)
+            if AppData=="2":
+                servo()
+            if AppData=="1":
+                live()
+            return "ok!"
+        app.run(host='0.0.0.0', port= 8090)
 
-    gpio()
-    @app.route('/SB')
-    def SB():
-        
-        AppData = request.args.get('Data')
-        print(AppData)
-        if AppData=="2":
-            servo()
-        if AppData=="1":
-            live()
-        return "ok!"
-
-    app.run(host='0.0.0.0', port= 8090)
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        executor.submit(gpio)
+        executor.submit(appControl)
+        executor.shutdown(wait=False)
+    
 
 except KeyboardInterrupt:
     pwm.stop()

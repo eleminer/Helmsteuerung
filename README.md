@@ -407,4 +407,18 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  ## Autostart Option für das gewählte Skript
  
+ Crontab ist meiner Meinung nach die einfachste Möglichkeit, Python Programme automatisch beim Starten auszuführen.
  
+ Crontab wird mit folgendem Befehl:
+    
+    crontab -e
+    
+ Nun können wir in der letzten Zeile den Pfad zu unserem Skript eingeben, davor schreiben wir noch "@reboot".
+ 
+ Beispiel:
+ 
+    @reboot sudo python /home/pi/Downloads/GPIO_Servo_and_LiveCam_Control.py
+
+Danach noch neustarten:
+
+    sudo reboot

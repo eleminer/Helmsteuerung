@@ -21,6 +21,9 @@ Coding Wifi Settings:
 ## Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
 Siehe Inhaltsverzeichnis!
 #### Videos zu Veranschaulichung der Funktionsweise befinden sich im Ordner Videos!
+### Update:
+#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden.
+#### Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
   - Plattform

@@ -389,6 +389,7 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 - "Speech to text Webdienst" einbinden
 - dynamsiche URL für HTTP Dienst
 - globale Variablen entfernen
+- **Vollversion der APP fertig implementieren**
 
 ## Q&A
 

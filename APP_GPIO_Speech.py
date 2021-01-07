@@ -3,8 +3,10 @@ from flask import request
 import RPi.GPIO as GPIO
 from picamera import PiCamera
 from time import sleep
+import os
 from concurrent.futures import ThreadPoolExecutor
 import time
+
 
 camera = PiCamera()
 GPIO.setmode(GPIO.BCM)

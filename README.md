@@ -43,11 +43,12 @@ _*Inhaltsverzeichnis:*_
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
-    - Webserver für HTTP Request Kontrolle (APP)
-    
-   - Flutter APP zur Steuerung
+    - Webserver für HTTP Request Kontrolle (APP) 
+  - Flutter APP zur Steuerung
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
+  - Verbesserungsvorschläge, Features die noch fehlen
+     
 
 ## Funktionsumfang
 Steuerung eines Servos.

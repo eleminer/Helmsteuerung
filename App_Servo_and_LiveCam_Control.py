@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import request
 import RPi.GPIO as GPIO
-from time import sleep
 from picamera import PiCamera
 from time import sleep
 

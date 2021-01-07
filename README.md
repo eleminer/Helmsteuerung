@@ -51,6 +51,7 @@ _*Inhaltsverzeichnis:*_
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
   - Verbesserungsvorschläge, Features die noch fehlen
+  - Q&A
   - Entwicklermodus
   - **Versionen von diesem Projekt (nur GPIO Control, nur App Control usw.)**
   - **Autostart Option für das gewählte Skript**
@@ -377,6 +378,8 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 - "Speech to text Webdienst" einbinden
 - dynamsiche URL für HTTP Dienst
 - globale Variablen entfernen
+
+## Q&A
 
 ## Entwicklermodus
 

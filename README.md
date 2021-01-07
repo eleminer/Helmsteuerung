@@ -325,3 +325,11 @@ Eine Benutzung über ein anderes WLAN ist nicht vorgesehen.
 Falls gewünscht, kann die URL im main.dart File geändert werden.
 
 ![](picturesREADME/URLfix.png)
+
+## Verbesserungsvorshläge, Features die noch fehlen
+
+- Aufnahmefunktion vom Kamerabild (eventuell mit Download in der App)
+- App Talkback (Zustand anzeigen in der APP, Fehlerausgabe)
+- "Speech to text Webdienst" einbinden
+- dynamsiche URL für HTTP Dienst
+

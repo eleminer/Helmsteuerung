@@ -326,7 +326,7 @@ Falls gewünscht, kann die URL im main.dart File geändert werden.
 
 ![](picturesREADME/URLfix.png)
 
-## Verbesserungsvorshläge, Features die noch fehlen
+## Verbesserungsvorschläge, Features die noch fehlen
 
 - Aufnahmefunktion vom Kamerabild (eventuell mit Download in der App)
 - App Talkback (Zustand anzeigen in der APP, Fehlerausgabe)

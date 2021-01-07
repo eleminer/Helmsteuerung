@@ -381,6 +381,11 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 
 ## Q&A
 
+- Warum Sopare und nicht Jasper?
+
+Jasper machte ziemlich viele Probleme bei der Installation, die zum jetzigen Zeitpunkt (Stand 07.01.2021) kanpp 200 offenen "Issues" haben mich zudem abgeschreckt mehr Zeit in Jasper zu investieren.
+Hier gibt es auch einen Artikel wo sich jemand massiv über Jasper und seine Benutzerfreundlichkeit beschwert: [Tutonaut.de](https://www.tutonaut.de/freie-alexa-alternative-mit-jasper-vollidioten-ftw/)
+
 ## Entwicklermodus
 
 Wenn kein bekanntes Wlan erreichbar ist, wird automisch der Hotspot aktiviert für den App Zugriff.

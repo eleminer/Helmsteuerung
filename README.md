@@ -405,4 +405,6 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  Diese Version ist nur für die Kontrolle per GPIO Taster.
  
+ ## Autostart Option für das gewählte Skript
+ 
  

@@ -46,6 +46,7 @@ _*Inhaltsverzeichnis:*_
     - Livebild Test
     - Webserver für HTTP Request Kontrolle (APP)
     - GPIO Taster Test
+    - Hinweis zur GPIO Ansteuerung
   - Flutter APP zur Steuerung
      - App Bedienungsanleitung
      - Besonderheit der App (Vereinfachung)
@@ -283,6 +284,16 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   Ein Taster wird an GPIO 20 (GPIO.BCM) angeschlossen, im geschlossenem Zustand sollte dieser den Pin gegen Ground ziehen.
   
         gpioTest.py
+        
+ ### Hinweis zur GPIO Ansteuerung
+ 
+ Im Programm werden die Taster so abgefragt, dass diese erst nach dem loslassen und einem weiterem betätigem wieder eine Funktion auslösen.
+ 
+ Zudem kann nur alle halbe Sekunde ein Befehl gegeben werden, somit werden Spannungsschwankungen am Pin abgefangen und Fehleingaben eliminiert.
+  
+ So sieht das im Programm aus, mit Timer und If Abfrage:
+ 
+ ![](picturesREADME/hinweisLogik.png)
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   

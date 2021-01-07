@@ -129,7 +129,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 
-  Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Copmuter und andersherum übetragen werden.
+  Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Computer und andersherum übetragen werden.
   Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
   
   -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
@@ -182,7 +182,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   ## Mikrofon auswählen und Sopare Einstellungen
   ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
-  Hierfür nutzen wir das Tool "Alsamixer", welches mit folgemdem Befehl geöffnet werden kann:
+  Hierfür nutzen wir das Tool "Alsamixer", welches mit folgendem Befehl geöffnet werden kann:
        
        alsamixer
   
@@ -200,7 +200,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     
     python sopare.py -u
     
-  Wenn der Test keinen Fehler ausgibt sonder "unit_tests run successfull!" dann passt alles. Herzlichen Glückwunsch :)
+  Wenn der Test keinen Fehler ausgibt sondern "unit_tests run successfull!" dann passt alles. Herzlichen Glückwunsch :)
         
   ### Sopare Mikrofoneinstellungen
   
@@ -290,8 +290,7 @@ Die Farben spiegeln Gruppen wieder,
 3. Sprachsteuerung an bzw. aus
 
 Die Buttons ändern jeweils den Zustand der Funktion.
-Standardmäßig ist das Livebild an und die Spracherkennung ausgeschaltet (nach jedem Neustart so)
-Die App erhält kein Feedback vom Programm.
+(Die App erhält kein Feedback vom Programm.)
 Falls die App nicht funtionieren sollte, ist zu schauen ob sich das Gerät im richtigen WLAN befindet (nur das eigene Hotspot WLAN wird von der App unterstützt).
 
 Die rotfarbene Gruppe ist für das anlernen der Befehle zuständig.
@@ -322,6 +321,6 @@ Wenn man etwas falsches angelernt hat, dann kann man ebenfalls das komplette Dic
 In der App wurde der einfachheitshalber die URL fest gesetzt, d.h die App funktioniert nur über den WLAN Hotspot.
 Eine Benutzung über ein anderes WLAN ist nicht vorgesehen.
 
-Falls geünscht, kann die URL im main.dart File geändert werden.
+Falls gewünscht, kann die URL im main.dart File geändert werden.
 
 ![](picturesREADME/URLfix.png)

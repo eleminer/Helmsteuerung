@@ -20,13 +20,45 @@ ispressed16=0
 touchTime20= int(round(time.time() * 1000))
 touchTime16= int(round(time.time() * 1000))
 millis=0
-
+lastspeechargument="hello"
 
 try:
     app = Flask(__name__)
 
     def readSpeechArguments():
-        print("hello marc")
+        global livefeed, servoposition, lastspeechargument
+        while True:
+            fileHandle = open ( '/home/pi/Downloads/1.txt',"r" )
+            lineList = fileHandle.readlines()
+            fileHandle.close()
+
+            if lineList!=lastspeechargument:
+                
+                if "live" in str(lineList):
+                    print("live from text")
+                    livefeed=0
+                    live()
+                    lastspeechargument=lineList
+                    
+                if "aus" in str(lineList):
+                    print("aus from text")
+                    livefeed=1
+                    live()
+                    lastspeechargument=lineList
+                    
+                if "auf" in str(lineList):
+                    print("auf from text")
+                    servoposition=1
+                    servo()
+                    lastspeechargument=lineList
+                    
+                if "zu" in str(lineList):
+                    print("zu from text")
+                    servoposition=0
+                    servo()
+                    lastspeechargument=lineList
+                
+
 
     def getMillis():
         global millis
@@ -92,8 +124,8 @@ try:
 
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.submit(gpio)
-        executor.submit(appControl)
         executor.submit(readSpeechArguments)
+        executor.submit(appControl)
         executor.shutdown(wait=False)
     
 

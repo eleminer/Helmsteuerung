@@ -326,6 +326,12 @@ Falls gewünscht, kann die URL im main.dart File geändert werden.
 
 ![](picturesREADME/URLfix.png)
 
+Wie im Abschnitt "App Bedienungsanleitung" bereits geschrieben, bekommt die App keinerlei Feddback von der Software, es hadelt sich lediglich um Buttons die im Hintergrund einen HTTP Request abfeuern.
+Fürs Debugging empfehle ich das Tool "Advanced REST client".
+Hier ein Bild wie eine Anfrage an die Software aussieht:
+
+![](picturesREADME/arc.png)
+
 ## Verbesserungsvorschläge, Features die noch fehlen
 
 - Aufnahmefunktion vom Kamerabild (eventuell mit Download in der App)

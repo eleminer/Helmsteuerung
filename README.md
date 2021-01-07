@@ -40,6 +40,7 @@ _*Inhaltsverzeichnis:*_
     - Alsamixer Standardmikrofon einstellen
     - Sopare Unit Test
     - Sopare Mikrofoneinstellungen
+  - Manuelles Anlernen von Befehlen (Sopare-Benutzung ohne App)
   - Testprogramme für die einzelnen Funktionen
     - Servotest
     - Livebild Test
@@ -223,7 +224,20 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     
     nano config/default.ini
  
+  ## Manuelles Anlernen von Befehlen (Sopare-Benutzung ohne App)
+    
+       ./sopare.py -v -t "dicname"
+       
+  Mit diesem Befehl kann das Lernen manuell gestartet werden, dicname sollte hier mit dem Namen des Kommandos ersetzt werden.
   
+  Zum kompilieren folgenden Befehl ausführen:
+  
+        ./sopare.py -c
+ Zum Löschen alle Befehle und des Wörtebuches:
+    
+        rm dict/*.raw
+        ./sopare.py -d "*"
+        
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
   servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.

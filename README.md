@@ -202,6 +202,10 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 
   
   ## Mikrofon auswählen und Sopare Einstellungen
+  Sopare Einstellungen im geklontem GitVerzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautordner.
+  
+  Einzigste Änderung zum Original: Plugin hinzugefügt.
+  
   ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgendem Befehl geöffnet werden kann:

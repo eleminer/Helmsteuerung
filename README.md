@@ -36,6 +36,7 @@ _*Inhaltsverzeichnis:*_
     - Raspberry Pi Kamera im Setup aktivieren
     - Installation von Sopare Dependencies
     - Erstellung Hotspot (nur auf unterstützter Hardware!)
+    - Weitere Pakete für Sprachsteuerung (Feedback Monitor)
   - Mikrofon auswählen und Sopare Einstellungen
     - Alsamixer Standardmikrofon einstellen
     - Sopare Unit Test
@@ -187,6 +188,16 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       cd sopare
       mkdir tokens
       mkdir samples
+      
+  -**Weitere Pakete für Sprachsteuerung (Feedback Monitor)**
+  
+  Wenn die Sprachsteuerung per App angelernt werden soll, sind weitere Pakete erforderlich.
+  Zum einem für das optische Feedback auf dem angeschlossenem HDMI Monitor wird folgendes benötigt:
+  
+        sudo apt-get install -y feh
+        sudo apt-get install xdotool
+
+  
   ## Mikrofon auswählen und Sopare Einstellungen
   ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.

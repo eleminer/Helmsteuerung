@@ -112,6 +112,10 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**
   
+  Sollte beim Starten ein Modul nicht gefunden werden, dann ist dieses eventuell nicht vorinstalliert und kann mit pip installiert werden.
+  Googeln hilft. ^^
+  
+  
    Das offizilelle Image kann mithilfe von dem Pi Imager installiert werden.
    Download für Windows: [Download](https://downloads.raspberrypi.org/imager/imager_1.5.exe)
    

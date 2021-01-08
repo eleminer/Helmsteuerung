@@ -56,7 +56,7 @@ _*Inhaltsverzeichnis:*_
   - Entwicklermodus
   - **Versionen von diesem Projekt (nur GPIO Control, nur App Control usw.)**
   - **Autostart Option für das gewählte Skript**
-     
+  - Empfehlung meinerseits
 
 ## Funktionsumfang
 Steuerung eines Servos.

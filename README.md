@@ -10,6 +10,7 @@ Hotspot Wifi Settings:
    
     - SSID: Ironman Wifi
     - Wifi-Passwort: 827hd73n28
+    - IP Adresse vom Pi im eigenem WLAN: 192.168.50.5
     
 Coding Wifi Settings:
 

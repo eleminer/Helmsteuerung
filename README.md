@@ -443,6 +443,8 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  Vollversion, läuft ebenfalls nur unter Python3!
  
+ Benötigt Textfile in /home/pi/Downloads/ mit dem Namen 1.txt und Sopare im Hintergrund laufend mit Plugin, welches sich im Ordner "PluginSopare" befindet.
+ 
  ## Autostart Option für das gewählte Skript
  
  Crontab ist meiner Meinung nach die einfachste Möglichkeit, Python Programme automatisch beim Starten auszuführen.

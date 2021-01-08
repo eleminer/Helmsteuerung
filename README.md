@@ -4,7 +4,6 @@ Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steu
 Dieses Projekt enthält Drittanbieter Software.
 Herzlichen Dank vorallem an den Entwickler von Sopare!
 
-# Images befinden sich im Ordner Images
     - Benutzername: pi
     - Passwort: 123456789
 Hotspot Wifi Settings:

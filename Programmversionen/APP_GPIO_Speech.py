@@ -64,7 +64,6 @@ try:
                     servo()
                     lastspeechargument=lineList
                 
-
     def speechSwitch():
         global argument
         if argument=="On":
@@ -78,8 +77,7 @@ try:
         image.terminate()
         subprocess.call(["xdotool", "mousemove", "945", "132"])
         image = Popen(["feh", "--hide-pointer", "-x", "-q", "-B", "black", "/home/pi/Helmsteuerung/PopUpFenster/speech"+str(argument)+".jpg"])
-        
-        
+               
     def getMillis():
         global millis
         millis= int(round(time.time() * 1000))

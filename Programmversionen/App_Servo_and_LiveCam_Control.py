@@ -5,9 +5,9 @@ from picamera import PiCamera
 from time import sleep
 
 camera = PiCamera()
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(40, GPIO.OUT)
-pwm=GPIO.PWM(40, 50)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(21, GPIO.OUT)
+pwm=GPIO.PWM(21, 50)
 pwm.start(0)
 servoposition = 1
 livefeed = 0
@@ -17,10 +17,10 @@ try:
 
     def SetAngle(angle):
         duty = angle / 18 + 2
-        GPIO.output(40, True)
+        GPIO.output(21, True)
         pwm.ChangeDutyCycle(duty)
         sleep(1)
-        GPIO.output(40, False)
+        GPIO.output(21, False)
         pwm.ChangeDutyCycle(0)
 
     def servo():

@@ -6,8 +6,9 @@ from time import sleep
 import os
 from concurrent.futures import ThreadPoolExecutor
 import time
-
-
+from subprocess import Popen
+import subprocess
+os.environ["DISPLAY"] = ':0'
 camera = PiCamera()
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(20, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -23,18 +24,21 @@ touchTime20= int(round(time.time() * 1000))
 touchTime16= int(round(time.time() * 1000))
 millis=0
 lastspeechargument="hello"
+argument="On"
+image = Popen(["feh", "--hide-pointer", "-x", "-q", "-B", "black", "/home/pi/Helmsteuerung/PopUpFenster/speech"+str(argument)+".jpg"])
+
 
 try:
     app = Flask(__name__)
 
     def readSpeechArguments():
-        global livefeed, servoposition, lastspeechargument
+        global livefeed, servoposition, lastspeechargument, argument
         while True:
             fileHandle = open ( '/home/pi/Downloads/1.txt',"r" )
             lineList = fileHandle.readlines()
             fileHandle.close()
 
-            if lineList!=lastspeechargument:
+            if lineList!=lastspeechargument and argument=="On":
                 
                 if "live" in str(lineList):
                     print("live from text")
@@ -61,7 +65,21 @@ try:
                     lastspeechargument=lineList
                 
 
+    def speechSwitch():
+        global argument
+        if argument=="On":
+            argument="Off"
+        else:
+            argument="On"
+        showImage()
 
+    def showImage():
+        global argument, image
+        image.terminate()
+        subprocess.call(["xdotool", "mousemove", "945", "132"])
+        image = Popen(["feh", "--hide-pointer", "-x", "-q", "-B", "black", "/home/pi/Helmsteuerung/PopUpFenster/speech"+str(argument)+".jpg"])
+        
+        
     def getMillis():
         global millis
         millis= int(round(time.time() * 1000))
@@ -113,6 +131,7 @@ try:
                 ispressed16=0
 
     def appControl():
+        print("app")
         @app.route('/SB')
         def SB():
             AppData = request.args.get('Data')
@@ -121,13 +140,15 @@ try:
                 servo()
             if AppData=="1":
                 live()
+            if AppData=="3":
+                speechSwitch()
             return "ok!"
         app.run(host='0.0.0.0', port= 8090)
 
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.submit(gpio)
-        executor.submit(readSpeechArguments)
         executor.submit(appControl)
+        executor.submit(readSpeechArguments)
         executor.shutdown(wait=False)
     
 

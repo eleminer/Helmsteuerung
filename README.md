@@ -322,6 +322,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
  
  
  Eventuell sind die Testprogramme an ein Image.jpg oder einen bestimmten Pfad gekoppelt, am besten das Skript öffnen und schauen ob etwas angepasst werden muss.
+ ((Stand: 08.01.2020:) nur bei "showimage.py" der Fall)
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   

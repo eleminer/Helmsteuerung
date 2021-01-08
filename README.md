@@ -18,9 +18,7 @@ Coding Wifi Settings:
     - Passwort: Raspberry
     
     
-## Wichtig: auch bei den "fertigen Images" müssen die Mikrofon- und Sopareeinstellungen vorgenommen werden!
-Siehe Inhaltsverzeichnis!
-#### Videos zu Veranschaulichung der Funktionsweise befinden sich im Ordner Videos!
+#### Hier geht es zu einem Video, welches die Funtionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 ### Update:
 #### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden.
 #### Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
@@ -105,9 +103,11 @@ Eventuell wird es eine zweite Version geben, in der eine API Schnittstelle zu ei
 Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfen.
 
 ## Pinbelegung Raspberry PI Servo und Taster
-***Servomotor:***
+***Servomotor: GPIO21 ***
 
-***Drucktaster:***
+***Drucktaster Livebild: GPIO16***
+
+***Drucktaster Livebild: GPIO20***
 
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**
@@ -162,7 +162,7 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
    
    Das erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
-   Nach ca. 7Stunden rumprobieren, bin ich auf ein Porjekt gestoßen welches ich für dieses Projekt verwenden kann.
+   Nach ca. 7Stunden rumprobieren, bin ich auf ein Projekt gestoßen welches ich für dieses Projekt verwenden kann.
    Kurz ausprobiert, funktioniert wie gewollt. ^^
    
    Hier gehts zum Raspberry Pi Connect Projekt [RaspberryPiConnect](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/183-raspberry-pi-automatic-hotspot-and-static-hotspot-installer)
@@ -178,8 +178,14 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
         --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
         --> reboot mit "sudo reboot"
    
-   -**Installation von Sopare Dependencies**
+   -**Installation von Sopare und Dependencies**
+   Nur auf unterstützter Hardware:
+   Im **Home Verzeichnis (/home/pi/** das Repository von Sopare klonen, dies geht mit folgendem Befehl:
+   
+        git clone https://github.com/bishoph/sopare.git
         
+   Danach ein paar Ressourcen die Sopare benötigt installieren:
+    
     sudo apt-get install build-essential 
     sudo apt-get install python-pyaudio 
     sudo apt-get install python-numpy
@@ -194,17 +200,16 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
       
   -**Weitere Pakete für Sprachsteuerung (Feedback Monitor)**
   
-  Wenn die Sprachsteuerung per App angelernt werden soll, sind weitere Pakete erforderlich.
-  Zum einem für das optische Feedback auf dem angeschlossenem HDMI Monitor wird folgendes benötigt:
+  Für die Vollversion APP Kontrolle, GPIO und Sprache werden weitere packete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
   
         sudo apt-get install -y feh
         sudo apt-get install xdotool
 
   
   ## Mikrofon auswählen und Sopare Einstellungen
-  Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautordner.
+  Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautverzeichnid.
   
-  Einzigste Änderung zum Original: Plugin hinzugefügt.
+  Einzigste Änderung zum Original: Plugin hinzugefügt. (komt später in der Anleitung.
   
   ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
@@ -315,6 +320,9 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
  So sieht das im Programm aus, mit Timer und If Abfrage:
  
  ![](picturesREADME/hinweisLogik.png)
+ 
+ 
+ Eventuell sind die Testprogramme an ein Image.jpg oder einen bestimmten Pfad gekoppelt, am besten das Skript öffnen und schauen ob etwas angepasst werden muss.
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   
@@ -430,6 +438,10 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  Wichtig: im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen!. 
  
  Dieses Modul gibt es nur für Python3, daher ist diese Version nur mit  Python 3 kompatibel und nicht mit Python2!
+ 
+ - 4.--> APP_GPIO_Speech.py
+ 
+ Vollversion, läuft ebenfalls nur unter Python3!
  
  ## Autostart Option für das gewählte Skript
  

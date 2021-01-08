@@ -459,3 +459,8 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
 Danach noch neustarten:
 
     sudo reboot
+    
+ ## Empfehlung meinerseits:
+ 
+ Raspberry Pi Zero, aufgrund des Formfaktors mit GPIO und/oder/nur APP Kontrolle.
+ Sprachsteuerung fürs erste außer acht lassen.

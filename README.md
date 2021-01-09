@@ -207,8 +207,8 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
   
   Für die Vollversion: APP Kontrolle, GPIO und Sprache werden weitere Packete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
   
-        sudo apt-get install -y feh
-        sudo apt-get install xdotool
+    sudo apt-get install -y feh
+    sudo apt-get install xdotool
 
   Das Paket "feh" wird benötigt um das Bild anzeigen lassen zu können und xdotool um den Pi aus dem "Display Schlaf" herauszuholen.
   
@@ -221,7 +221,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgendem Befehl geöffnet werden kann:
        
-       alsamixer
+     alsamixer
   
   Mit F6 können wir nun unser Mikrofon auswählen:
   ![](picturesREADME/alsamixer.png)

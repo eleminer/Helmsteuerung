@@ -23,7 +23,7 @@ Coding Wifi Settings:
 #### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
-  -  unterstützte Plattformen
+  - Unterstützte Plattformen
   - Sprachsteuerung
   - Pinbelegung GPIO
   - Manuelle Installationsanleitung
@@ -62,12 +62,12 @@ _*Inhaltsverzeichnis:*_
 Steuerung eines Servos.
 Live Bild auf einem HDMI Monitor von einer Raspberry Pi Kamera.
 
-Die Steuerung erfolgt wahlweise über Sprache, Taster an den GPIO Pins bzw einer Flutter App.
+Die Steuerung erfolgt wahlweise über Sprache, Taster an den GPIO Pins oder einer Flutter App.
 
 ## Plattformen
 Als Einheit wird ein Raspberry Pi Zero verwendet, bzw ein Raspberry Pi 3.
 
-Aufgrund der schwachen Rechenleitung des Raspberry Pi Zero's wird die Srachsteuerung auf selbiger Plattform nicht unterstützt.
+Aufgrund der schwachen Rechenleistung des Raspberry Pi Zero's wird die Sprachsteuerung auf selbiger Plattform nicht unterstützt.
 
 **Folgende Tabelle zeigt welche Funtkionen auf den jeweiligen Raspberry Pi Modellen unterstützt werden.**
 Getestet wurde die Software lediglich mit dem Raspberry Pi Zero und dem Raspberry Pi 3 Mod. B (v1.2)
@@ -94,7 +94,7 @@ Die restlichen Angaben beziehen sich auf die Eckdaten von der Raspberry Pi Found
 
 ## Sprachsteuerung 
 Als Spracherkennung wird die Sofware **Sopare** verwendet.
-Dies ist eine "Sound Pattern Recognition" Software die es erlaubt offline und in echtzeit Sprachbefehle zu verarbeiten.
+Dies ist eine "Sound Pattern Recognition" Software die es erlaubt offline und in Echtzeit Sprachbefehle zu verarbeiten.
 Die Sofware wurde unter der Apache Lizenz veröffentlicht und kann über diesen Link aufgerufen werden: 
 [Sopare](https://github.com/bishoph/sopare)
 
@@ -108,7 +108,7 @@ Diese Idee wurde jedoch vorerst, aufgrund den damit verbundenen Kosten, verworfe
 
 ***Drucktaster Livebild: GPIO20 und GND***
 
-Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
+Die Drucktaster sind softwareseitig auf PullUP eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
 
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**
@@ -117,7 +117,7 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
   Googeln hilft. ^^
   
   
-   Das offizilelle Image kann mithilfe von dem Pi Imager installiert werden.
+   Das offizielle Image kann mithilfe von dem Pi Imager installiert werden.
    Download für Windows: [Download](https://downloads.raspberrypi.org/imager/imager_1.5.exe)
    
   -**Optional: WPA Config und SSH aktivieren**
@@ -166,7 +166,7 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
    Der Hotspot wird vom Raspberry aufgebaut und dient dazu die Software mithilfe der Flutter **App** zu **steuern**.
    Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
    
-   Das erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
+   Das Erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netzwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
    Nach ca. 7 Stunden rumprobieren bin ich auf ein Projekt gestoßen, welches ich für dieses Projekt verwenden kann.
    Kurz ausprobiert, funktioniert wie gewollt. ^^
    
@@ -210,15 +210,15 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
     sudo apt-get install -y feh
     sudo apt-get install xdotool
 
-  Das Paket "feh" wird benötigt um das Bild anzeigen lassen zu können und xdotool um den Pi aus dem "Display Schlaf" herauszuholen.
+  Das Paket "feh" wird benötigt um das Bild anzeigen lassen zu können und "xdotool" um den Pi aus dem Display sleep herauszuholen.
   
   ## Mikrofon auswählen und Sopare Einstellungen
-Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautverzeichnis vom Pi. Nicht im Unterordner von diesem Projekt.
+Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hauptverzeichnis vom Pi. Nicht im Unterordner von diesem Projekt.
   
-  Einzigste Änderung zum Original: Plugin hinzugefügt. (kommt später in der Anleitung).
+  Einzige Änderung zum Original: Plugin hinzugefügt (kommt später in der Anleitung).
   
   ### Alsamixer Standardmikrofon einstellen
-  Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
+  Zunächst müssen wir dem Betriebssystem ein Standard Mikrofon zuweisen.
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgendem Befehl geöffnet werden kann:
        
     alsamixer
@@ -267,7 +267,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Zum kompilieren folgenden Befehl ausführen:
   
     ./sopare.py -c
- Zum Löschen alle Befehle und des Wörtebuches:
+ Zum Löschen aller Befehle und des Wörtebuches:
     
     rm dict/*.raw
     ./sopare.py -d "*"
@@ -282,21 +282,21 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
     5V: 5Volt am Pi
 
   Bei dem Servotest wird der Servo auf 90°, 180° und 0° im 3 Sekundentakt gefahren.
-  Wichtig: Der Servo wird nicht permanent mit einem PWM Signal versorgt! Da es sonst aufgrund der softwareseitgen Implementierung zu Timing Probleme kommen kann.
+  Wichtig: Der Servo wird nicht permanent mit einem PWM Signal versorgt! Da es sonst aufgrund der softwareseitigen Implementierung zu Timing Probleme kommen kann.
   (Zittern des Servos)
   D.h der Servo wird auf die Position gefahren und dann abgeschaltet, er hält nicht aktiv die Position.
   Je nachdem welche Last auf dem Servo liegt kann man dies vernachlässigen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
   
-  Als Alternative könnte man gegebenfalls eine hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
+  Als Alternative könnte man gegebenfalls eine hardwareseitige Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
   
   ### Livebild Test
-  displayliveTest.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
+  displayliveTest.py testet das Live Bild von einer Raspberry Pi Kamera auf einem HDMI Monitor.
   
   Dafür öffnet das Programm ein Vorschaufenster im Vollbild und schließt dieses nach 50 Sekunden wieder.
   Während diesen 50 Sekunden sollte das Live Bild der Raspberry Pi Kamera sichtbar sein.
   
   Der Display Sleep Mode wird dadurch nicht unterbrochen.
-  D.h der Raspberry geht nach ein paar Minuten ohne Tastatur/Maus eingabe in einen Sleep Mode, mit schwarzem Bild.
+  D.h der Raspberry geht nach ein paar Minuten ohne Tastatur-/Mauseingabe in einen Sleep Mode, mit schwarzem Bild.
   Das schwarzes Bild wird von dem Live Feed überdeckt und nach dem Test erscheint wieder das schwarze Bild.
   
   ### Webserver für HTTP Request Kontrolle (APP)
@@ -339,7 +339,7 @@ Um die Software gut bedienen zu können wurde eine schlichte Flutter App entwick
 (Mit Flutter können Cross-Plattform Apps in der Programmiersprache Dart entwickelt werden)
 Somit funktioniert die dem Projekt zugehörige App auf Android Smartphones als auch IOS basierenden Endgeräten.
 
-Wichtig: Dateinahme zu lang bei einer Datei im Flutter Projekt.
+Wichtig: Dateiname zu lang bei einer Datei im Flutter Projekt.
 
 warning: LF will be replaced by CRLF in IronmanHelmFlutter/pubspec.lock.
 The file will have its original line endings in your working directory
@@ -376,7 +376,7 @@ Hier können die vier Befehle:
 
 angelernt werden.
 
-Eine mögliche zuordnung der Befehle:
+Eine mögliche Zuordnung der Befehle:
 
     - Servo auf: gesprochen "Servo auf"
     - Servo zu: gesprochen "zu"
@@ -423,10 +423,10 @@ Hier gibt es auch einen Artikel wo sich jemand massiv über Jasper und seine Ben
 ## Entwicklermodus
 
 Wenn kein bekanntes Wlan erreichbar ist, wird automisch der Hotspot aktiviert für den App Zugriff.
-Manchmal ist jedoch eine Internetverbindung notwenig um Pakete oder Plugins installieren zu können.
+Manchmal ist jedoch eine Internetverbindung notwendig um Pakete oder Plugins installieren zu können.
 Wenn der Raspberry sich in Reichweite des Wlans mit der SSID "Coding" befindet, verbindet er sich mit diesem und baut keinen Hotspot auf.
 
-Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 Hotspot funktion dafür zu nutzen:
+Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 Hotspot Funktion dafür zu nutzen:
 
 ![](picturesREADME/hotspotWin10.png)
 
@@ -441,8 +441,8 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  - 3.--> APP_and_GPIO.py
  
- Diese Version ist für die Kontrolle per App und gleichzeitig per GPIO vergesehen.
- Wichtig: im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen!. 
+ Diese Version ist für die Kontrolle per App und gleichzeitig per GPIO vorgesehen.
+ Wichtig: Im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen. 
  Dieses Modul gibt es nur für Python3, daher ist diese Version nur mit  Python 3 kompatibel und nicht mit Python2!
  
  - 4.--> APP_GPIO_Speech.py
@@ -464,7 +464,7 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
     @reboot sudo python /home/pi/Downloads/GPIO_Servo_and_LiveCam_Control.py
 
-Danach noch neustarten:
+Danach noch neu starten:
 
     sudo reboot
     

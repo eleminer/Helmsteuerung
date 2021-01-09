@@ -34,7 +34,7 @@ _*Inhaltsverzeichnis:*_
     - Tipp: Daten auf den Pi kopieren und herunterladen!
     - Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)
     - Raspberry Pi Kamera im Setup aktivieren
-    - Installation von Sopare Dependencies
+    - Installation von Sopare und Dependencies
     - Erstellung Hotspot (nur auf unterstützter Hardware!)
     - Weitere Pakete für Sprachsteuerung (Feedback Monitor)
   - Mikrofon auswählen und Sopare Einstellungen
@@ -99,14 +99,16 @@ Die Sofware wurde unter der Apache Lizenz veröffentlicht und kann über diesen 
 [Sopare](https://github.com/bishoph/sopare)
 
 Eventuell wird es eine zweite Version geben, in der eine API Schnittstelle zu einem STT Server aufgebaut wird. (Google Cloud Speech-to-Text).
-Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfen.
+Diese Idee wurde jedoch vorerst, aufgrund den damit verbundenen Kosten, verworfen.
 
 ## Pinbelegung Raspberry PI Servo und Taster
-***Servomotor: GPIO21 ***
+***Servomotor: GPIO21***
 
-***Drucktaster Livebild: GPIO16***
+***Drucktaster Livebild: GPIO16 und GND***
 
-***Drucktaster Livebild: GPIO20***
+***Drucktaster Livebild: GPIO20 und GND***
+
+Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
 
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**
@@ -129,8 +131,8 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
     
   -**Update/Upgrade vom System**
     
-     sudo apt-get update 
-     sudo apt-get upgrade
+    sudo apt-get update 
+    sudo apt-get upgrade
   
   -**Optional: Remote Desktop installieren**
 
@@ -149,14 +151,14 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
   
   -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
    
-       pip install RPi.GPIO
+    pip install RPi.GPIO
        
    Mithilfe von diesem Befehl kann das Paket installiert werden.
    Weitere Informationen zu dem Modul findet man hier: [PyPi.org](https://pypi.org/project/RPi.GPIO/)
    
   -**Raspberry Pi Kamera im Setup aktivieren**
       
-      sudo raspi-config --> Interface Option --> Camera
+    sudo raspi-config --> Interface Option --> Camera
      
    -**Erstellung Hotspot (nur auf unterstützter Hardware!)**
    
@@ -172,14 +174,14 @@ Diese Idee wurde jedoch vererst, aufgrund den damit verbundenen Kosten, verworfe
    
    Zudem gibt es für dieses Projekt ein Installer, mit dem eine einfache Installation möglich ist.
    
-        curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
-        tar -xzvf AutoHotspot-Setup.tar.gz
-        cd Autohotspot
-        sudo ./autohotspot-setup.sh
-        --> 2 Option wählen für die Installation
-        --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
-        --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
-        --> reboot mit "sudo reboot"
+      curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
+      tar -xzvf AutoHotspot-Setup.tar.gz
+      cd Autohotspot
+      sudo ./autohotspot-setup.sh
+      --> 2 Option wählen für die Installation
+      --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
+      --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
+      --> reboot mit "sudo reboot"
    
    -**Installation von Sopare und Dependencies**
    Nur auf unterstützter Hardware:

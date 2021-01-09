@@ -167,29 +167,29 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
    Dazu verbindet man sein Smartphone mit dem Hotspot vom Raspberry Pi.
    
    Das erstellen eines Hotspots auf einem Pi, welcher gleichzeitig als Client im Netwerk sichtbar ist, gestaltete sich schwieriger als zuerst angenommen.
-   Nach ca. 7Stunden rumprobieren, bin ich auf ein Projekt gestoßen welches ich für dieses Projekt verwenden kann.
+   Nach ca. 7 Stunden rumprobieren bin ich auf ein Projekt gestoßen, welches ich für dieses Projekt verwenden kann.
    Kurz ausprobiert, funktioniert wie gewollt. ^^
    
    Hier gehts zum Raspberry Pi Connect Projekt [RaspberryPiConnect](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/183-raspberry-pi-automatic-hotspot-and-static-hotspot-installer)
    
    Zudem gibt es für dieses Projekt ein Installer, mit dem eine einfache Installation möglich ist.
    
-     curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
-     tar -xzvf AutoHotspot-Setup.tar.gz
-     cd Autohotspot
-     sudo ./autohotspot-setup.sh
-     --> 2 Option wählen für die Installation
-     --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
-     --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
-     --> reboot mit "sudo reboot"
+    curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
+    tar -xzvf AutoHotspot-Setup.tar.gz
+    cd Autohotspot
+    sudo ./autohotspot-setup.sh
+    --> 2 Option wählen für die Installation
+    --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
+    --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
+    --> reboot mit "sudo reboot"
    
-   -**Installation von Sopare und Dependencies**
-   Nur auf unterstützter Hardware:
-   Im **Home Verzeichnis (/home/pi/** das Repository von Sopare klonen, dies geht mit folgendem Befehl:
+  -**Installation von Sopare und Dependencies**
+  Nur auf unterstützter Hardware:
+  Im **Home Verzeichnis (/home/pi/** das Repository von Sopare klonen, dies geht mit folgendem Befehl:
    
-        git clone https://github.com/bishoph/sopare.git
+    git clone https://github.com/bishoph/sopare.git
         
-   Danach ein paar Ressourcen die Sopare benötigt installieren:
+  Danach ein paar Ressourcen die Sopare benötigt installieren:
     
     sudo apt-get install build-essential 
     sudo apt-get install python-pyaudio 
@@ -197,24 +197,25 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
     sudo apt-get install python-scipy 
     sudo apt-get install python-matplotlib
     
-   und noch zwei leere Ordner erstellen im Unterordner "sopare"......
+  und noch zwei leere Ordner erstellen im Unterordner "sopare"......
     
-      cd sopare
-      mkdir tokens
-      mkdir samples
+     cd sopare
+     mkdir tokens
+     mkdir samples
       
   -**Weitere Pakete für Sprachsteuerung (Feedback Monitor)**
   
-  Für die Vollversion APP Kontrolle, GPIO und Sprache werden weitere packete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
+  Für die Vollversion: APP Kontrolle, GPIO und Sprache werden weitere Packete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
   
         sudo apt-get install -y feh
         sudo apt-get install xdotool
 
+  Das Paket "feh" wird benötigt um das Bild anzeigen lassen zu können und xdotool um den Pi aus dem "Display Schlaf" herauszuholen.
   
   ## Mikrofon auswählen und Sopare Einstellungen
-  Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautverzeichnid.
+Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopare Git Verzeichnis befindet sich im Hautverzeichnis vom Pi. Nicht im Unterordner von diesem Projekt.
   
-  Einzigste Änderung zum Original: Plugin hinzugefügt. (komt später in der Anleitung.
+  Einzigste Änderung zum Original: Plugin hinzugefügt. (kommt später in der Anleitung).
   
   ### Alsamixer Standardmikrofon einstellen
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
@@ -236,7 +237,7 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
     
     python sopare.py -u
     
-  Wenn der Test keinen Fehler ausgibt sondern "unit_tests run successfull!" dann passt alles. Herzlichen Glückwunsch :)
+  Wenn der Test keinen Fehler ausgibt sondern "unit_tests run successful!" dann passt alles. Herzlichen Glückwunsch :)
         
   ### Sopare Mikrofoneinstellungen
   
@@ -259,21 +260,21 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
  
   ## Manuelles Anlernen von Befehlen (Sopare-Benutzung ohne App)
     
-       ./sopare.py -v -t "dicname"
+    ./sopare.py -v -t "dicname"
        
   Mit diesem Befehl kann das Lernen manuell gestartet werden, dicname sollte hier mit dem Namen des Kommandos ersetzt werden.
   
   Zum kompilieren folgenden Befehl ausführen:
   
-        ./sopare.py -c
+    ./sopare.py -c
  Zum Löschen alle Befehle und des Wörtebuches:
     
-        rm dict/*.raw
-        ./sopare.py -d "*"
+    rm dict/*.raw
+    ./sopare.py -d "*"
         
   ## Testprogramme für die einzelnen Funktionen
   ### Servo Test
-  servotesting.py testet einen Servo der an den GPIO Pins angeschlossen ist.
+  servoTest.py testet einen Servo der an den GPIO Pins angeschlossen ist.
   Dafür wurden folgende GPIO Pins verwendet:
   
     Signal: GPIO Pin 40 am Pi
@@ -284,12 +285,12 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
   Wichtig: Der Servo wird nicht permanent mit einem PWM Signal versorgt! Da es sonst aufgrund der softwareseitgen Implementierung zu Timing Probleme kommen kann.
   (Zittern des Servos)
   D.h der Servo wird auf die Position gefahren und dann abgeschaltet, er hält nicht aktiv die Position.
-  Je nachdem welche Last auf dem Servo liegt kann man dies vernachlässichen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
+  Je nachdem welche Last auf dem Servo liegt kann man dies vernachlässigen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
   
   Als Alternative könnte man gegebenfalls eine hardwareseitge Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
   
   ### Livebild Test
-  displaylive.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
+  displayliveTest.py testet das Live Bild von einer Raspberry Pi Cam auf einen HDMI Monitor.
   
   Dafür öffnet das Programm ein Vorschaufenster im Vollbild und schließt dieses nach 50 Sekunden wieder.
   Während diesen 50 Sekunden sollte das Live Bild der Raspberry Pi Kamera sichtbar sein.
@@ -300,9 +301,9 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
   
   ### Webserver für HTTP Request Kontrolle (APP)
   
-  Mithilfe dem Python Skript "webserviceTest.py" kann die App und Flask getestet werden.
+  Mithilfe dem Python Skript "appgetdataTest.py" kann die App und Flask getestet werden.
   
-  Wenn der Pi sich im Wifi Hotspot Mode befindet und ein Smaprthone im Wifi Netz, sollten App-Eingaben im Terminal sichtbar sein.
+  Wenn der Pi sich im Wifi Hotspot Mode befindet und ein Smartphone im Wifi Netz, sollten App-Eingaben im Terminal sichtbar sein.
   
   So sollte das aussehen:
   
@@ -314,7 +315,7 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
   
   Ein Taster wird an GPIO 20 (GPIO.BCM) angeschlossen, im geschlossenem Zustand sollte dieser den Pin gegen Ground ziehen.
   
-        gpioTest.py
+    gpioTest.py
         
  ### Hinweis zur GPIO Ansteuerung
  
@@ -328,7 +329,7 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
  
  
  Eventuell sind die Testprogramme an ein Image.jpg oder einen bestimmten Pfad gekoppelt, am besten das Skript öffnen und schauen ob etwas angepasst werden muss.
- ((Stand: 08.01.2020:) nur bei "showimage.py" der Fall)
+ ((Stand: 08.01.2020:) nur bei "showimageTest.py" der Fall)
   
   ## Flutter APP (App kompatibel mit Android, IOS, Windows usw.)
   
@@ -355,7 +356,7 @@ Die App ist recht einfach aufgebaut, sie besteht aus neun Buttons.
 Davon sind drei Buttons orange, vier rot und zwei gelb.
 
 Die Farben spiegeln Gruppen wieder,
-**Orangfarbene Gruppe** ist für die Steuerung der Grundfunktionen zuständig.
+**orangfarbene Gruppe** ist für die Steuerung der Grundfunktionen zuständig.
 
 1. Livebild an bzw. aus
 2. Servo Position ändern (0°/180°)
@@ -365,7 +366,7 @@ Die Buttons ändern jeweils den Zustand der Funktion.
 (Die App erhält kein Feedback vom Programm.)
 Falls die App nicht funtionieren sollte, ist zu schauen ob sich das Gerät im richtigen WLAN befindet (nur das eigene Hotspot WLAN wird von der App unterstützt).
 
-Die rotfarbene Gruppe ist für das anlernen der Befehle zuständig.
+Die **rotfarbene Gruppe** ist für das Anlernen der Befehle zuständig.
 Hier können die vier Befehle:
     
     - Servo auf
@@ -384,8 +385,8 @@ Eine mögliche zuordnung der Befehle:
 
 Der Lernprozess kann mehrmals hintereinander gestartet werden um ein immer besseres Ergebnis zu erhalten.
 
-Nach jedem Lernprozess muss das Dictionary erneut "kompiliert" werden.
-Dafür gibt es die gelbe Gruppe.
+Nach jeder Lernsession muss das Dictionary erneut "kompiliert" werden um die Änderungen wirksam zu machen.
+Dafür gibt es die **gelbe Gruppe**.
 Wenn man etwas falsches angelernt hat, dann kann man ebenfalls das komplette Dictionary über den rechten gelben Knopf löschen.
 
 ### Besonderheit der App
@@ -397,7 +398,7 @@ Falls gewünscht, kann die URL im main.dart File geändert werden.
 
 ![](picturesREADME/URLfix.png)
 
-Wie im Abschnitt "App Bedienungsanleitung" bereits geschrieben, bekommt die App keinerlei Feddback von der Software, es hadelt sich lediglich um Buttons die im Hintergrund einen HTTP Request abfeuern.
+Wie im Abschnitt "App Bedienungsanleitung" bereits geschrieben, bekommt die App keinerlei Feedback von der Software, es handelt sich lediglich um Buttons die im Hintergrund einen HTTP Request abfeuern.
 Fürs Debugging empfehle ich das Tool "Advanced REST client".
 Hier ein Bild wie eine Anfrage an die Software aussieht:
 
@@ -442,13 +443,11 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  
  Diese Version ist für die Kontrolle per App und gleichzeitig per GPIO vergesehen.
  Wichtig: im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen!. 
- 
  Dieses Modul gibt es nur für Python3, daher ist diese Version nur mit  Python 3 kompatibel und nicht mit Python2!
  
  - 4.--> APP_GPIO_Speech.py
  
  Vollversion, läuft ebenfalls nur unter Python3!
- 
  Benötigt Textfile in /home/pi/Downloads/ mit dem Namen 1.txt und Sopare im Hintergrund laufend mit Plugin, welches sich im Ordner "PluginSopare" befindet.
  
  ## Autostart Option für das gewählte Skript
@@ -472,4 +471,4 @@ Danach noch neustarten:
  ## Empfehlung meinerseits:
  
  Raspberry Pi Zero, aufgrund des Formfaktors mit GPIO und/oder/nur APP Kontrolle.
- Sprachsteuerung fürs erste außer acht lassen.
+ Sprachsteuerung fürs Erste außer Acht lassen.

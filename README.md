@@ -199,9 +199,9 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
     
   und noch zwei leere Ordner erstellen im Unterordner "sopare"......
     
-     cd sopare
-     mkdir tokens
-     mkdir samples
+    cd sopare
+    mkdir tokens
+    mkdir samples
       
   -**Weitere Pakete für Sprachsteuerung (Feedback Monitor)**
   
@@ -221,7 +221,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Zunächst müssen wir dem Betriebsystem ein Standard Mikrofon zuweisen.
   Hierfür nutzen wir das Tool "Alsamixer", welches mit folgendem Befehl geöffnet werden kann:
        
-     alsamixer
+    alsamixer
   
   Mit F6 können wir nun unser Mikrofon auswählen:
   ![](picturesREADME/alsamixer.png)

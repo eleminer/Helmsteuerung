@@ -23,7 +23,7 @@ Coding Wifi Settings:
 #### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
-  - Plattform
+  -  unterstützte Plattformen
   - Sprachsteuerung
   - Pinbelegung GPIO
   - Manuelle Installationsanleitung
@@ -64,7 +64,7 @@ Live Bild auf einem HDMI Monitor von einer Raspberry Pi Kamera.
 
 Die Steuerung erfolgt wahlweise über Sprache, Taster an den GPIO Pins bzw einer Flutter App.
 
-## Plattform
+## Plattformen
 Als Einheit wird ein Raspberry Pi Zero verwendet, bzw ein Raspberry Pi 3.
 
 Aufgrund der schwachen Rechenleitung des Raspberry Pi Zero's wird die Srachsteuerung auf selbiger Plattform nicht unterstützt.

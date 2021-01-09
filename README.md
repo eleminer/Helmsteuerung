@@ -174,14 +174,14 @@ Die Drucktaster sind softwareseitg auf PullUP eingestellt. D.h wenn der Pin auf 
    
    Zudem gibt es für dieses Projekt ein Installer, mit dem eine einfache Installation möglich ist.
    
-      curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
-      tar -xzvf AutoHotspot-Setup.tar.gz
-      cd Autohotspot
-      sudo ./autohotspot-setup.sh
-      --> 2 Option wählen für die Installation
-      --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
-      --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
-      --> reboot mit "sudo reboot"
+     curl "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.gz" -o AutoHotspot-Setup.tar.gz
+     tar -xzvf AutoHotspot-Setup.tar.gz
+     cd Autohotspot
+     sudo ./autohotspot-setup.sh
+     --> 2 Option wählen für die Installation
+     --> 5 WLAN "Coding" hinzufügen (Windows 10 Hotspot oder  vglb.)
+     --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
+     --> reboot mit "sudo reboot"
    
    -**Installation von Sopare und Dependencies**
    Nur auf unterstützter Hardware:

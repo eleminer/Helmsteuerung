@@ -20,8 +20,7 @@ Coding Wifi Settings:
     
 #### Hier geht es zu einem Video, welches die Funtionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 ### Update:
-#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden.
-#### Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
+#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
   - Plattform

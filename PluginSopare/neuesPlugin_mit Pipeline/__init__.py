@@ -12,6 +12,7 @@ def encode_msg_size(size):
 
 
 def pipesend(name):
+    print(name)
     IPC_FIFO_NAME = path
     fifo = os.open(IPC_FIFO_NAME, os.O_WRONLY)
     content = str(name).encode("utf8")
@@ -22,13 +23,9 @@ def pipesend(name):
 def run(readable_results, data, rawbuf):
     if "live" in readable_results:
         pipesend("live")
-        print("live")
     if "aus" in readable_results:
         pipesend("aus") 
-        print("aus")
     if "auf" in readable_results: 
         pipesend("auf")
-        print("auf")
     if "zu" in readable_results: 
         pipesend("zu")
-        print("zu")

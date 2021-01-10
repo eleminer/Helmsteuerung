@@ -1,5 +1,5 @@
 # Helmsteuerung Ironman ![](picturesREADME/ironman.png)
-Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
+Dieses Repository befasst sich mit der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
 
 Dieses Projekt enthält Drittanbieter Software.
 Herzlichen Dank vor allem an den Entwickler von Sopare!
@@ -18,10 +18,10 @@ Coding Wifi Settings:
     - Passwort: Raspberry
     
     
-#### Hier geht es zu einem Video, welches die Funtionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
+#### Hier geht es zu einem Video, welches die Funktionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 #### Hier geht es zu einem Raspberry Pi Image mit aktiviertem Autostart für die Kontrolle mit APP und GPIO. [ImageDownload](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 ### Update:
-#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!Das Manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schritt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
+#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich! Das manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schritt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
 #### Im Plugin sollte jedoch die If Abfrage den jeweiligen Kommandos entsprechen!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
@@ -110,7 +110,7 @@ Diese Idee wurde jedoch vorerst, aufgrund den damit verbundenen Kosten, verworfe
 
 ***Drucktaster Livebild: GPIO20 und GND***
 
-Die Drucktaster sind softwareseitig auf Pull-Up eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
+Die Drucktaster sind softwareseitig auf Pull-Up eingestellt. D.h. wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
 
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**

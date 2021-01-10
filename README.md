@@ -2,7 +2,7 @@
 Dieses Repository befasst sich mir der Entwicklung einer Software, für die Steuerung eines "Ironman Helmes".
 
 Dieses Projekt enthält Drittanbieter Software.
-Herzlichen Dank vorallem an den Entwickler von Sopare!
+Herzlichen Dank vor allem an den Entwickler von Sopare!
 
     - Benutzername: pi
     - Passwort: 123456789
@@ -21,7 +21,7 @@ Coding Wifi Settings:
 #### Hier geht es zu einem Video, welches die Funtionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 #### Hier geht es zu einem Raspberry Pi Image mit aktiviertem Autostart für die Kontrolle mit APP und GPIO. [ImageDownload](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 ### Update:
-#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!Das Manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schrittt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
+#### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!Das Manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schritt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
 #### Im Plugin sollte jedoch die If Abfrage den jeweiligen Kommandos entsprechen!
 _*Inhaltsverzeichnis:*_
   - Funktionsumfang
@@ -110,7 +110,7 @@ Diese Idee wurde jedoch vorerst, aufgrund den damit verbundenen Kosten, verworfe
 
 ***Drucktaster Livebild: GPIO20 und GND***
 
-Die Drucktaster sind softwareseitig auf PullUP eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
+Die Drucktaster sind softwareseitig auf Pull-Up eingestellt. D.h wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
 
 ## Manuelle Installationsanleitung
   -**Installation von Raspbian**
@@ -148,8 +148,8 @@ Die Drucktaster sind softwareseitig auf PullUP eingestellt. D.h wenn der Pin auf
       
   -**Tipp: Daten auf den Pi kopieren und herunterladen!**
 
-  Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Computer und andersherum übetragen werden.
-  Hier kann das Programm heruntergelden werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
+  Mithilfe des Windows Programms WinSCP können Dateien mühelos vom Pi auf den Computer und andersherum übertragen werden.
+  Hier kann das Programm heruntergeladen werden: [WinSCP](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
   
   -**Installation der GPIO Python Bibliothek (RPi.GPIO 0.7.0)**
    
@@ -185,9 +185,8 @@ Die Drucktaster sind softwareseitig auf PullUP eingestellt. D.h wenn der Pin auf
     --> 7 WLAN zu "Ironman Wifi" umbenennen und Passwort vergeben
     --> reboot mit "sudo reboot"
    
-  -**Installation von Sopare und Dependencies**
-  Nur auf unterstützter Hardware:
-  Im **Home Verzeichnis (/home/pi/** das Repository von Sopare klonen, dies geht mit folgendem Befehl:
+  -**Installation von Sopare und Dependencies (nur auf unterstützter Hardware!)**
+  Im Home Verzeichnis /home/pi/ das Repository von Sopare klonen, dies geht mit folgendem Befehl:
    
     git clone https://github.com/bishoph/sopare.git
         
@@ -207,7 +206,7 @@ Die Drucktaster sind softwareseitig auf PullUP eingestellt. D.h wenn der Pin auf
       
   -**Weitere Pakete für Sprachsteuerung (Feedback Monitor)**
   
-  Für die Vollversion: APP Kontrolle, GPIO und Sprache werden weitere Packete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
+  Für die Vollversion: APP Kontrolle, GPIO und Sprache werden weitere Pakete benötigt, um ein kleines Feedback auf dem Monitor ausgeben lassen zu können.
   
     sudo apt-get install -y feh
     sudo apt-get install xdotool
@@ -313,7 +312,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   
   ### GPIO Taster Test
   
-  Das Tool "gpioTest.py" kann dazu genuzt werden um die GPIO Eingänge des Raspberrys zu testen.
+  Das Tool "gpioTest.py" kann dazu genutzt werden um die GPIO Eingänge des Raspberrys zu testen.
   
   Ein Taster wird an GPIO 20 (GPIO.BCM) angeschlossen, im geschlossenem Zustand sollte dieser den Pin gegen Ground ziehen.
   
@@ -321,7 +320,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
         
  ### Hinweis zur GPIO Ansteuerung
  
- Im Programm werden die Taster so abgefragt, dass diese erst nach dem loslassen und einem weiterem betätigem wieder eine Funktion auslösen.
+ Im Programm werden die Taster so abgefragt, dass diese erst nach dem loslassen und einem weiterem betätigen wieder eine Funktion auslösen.
  
  Zudem kann nur alle halbe Sekunde ein Befehl gegeben werden, somit werden Spannungsschwankungen am Pin abgefangen und Fehleingaben eliminiert.
   
@@ -419,7 +418,7 @@ Hier ein Bild wie eine Anfrage an die Software aussieht:
 
 - Warum Sopare und nicht Jasper?
 
-Jasper machte ziemlich viele Probleme bei der Installation, die zum jetzigen Zeitpunkt (Stand 07.01.2021) kanpp 200 offenen "Issues" haben mich zudem abgeschreckt mehr Zeit in Jasper zu investieren.
+Jasper machte ziemlich viele Probleme bei der Installation, die zum jetzigen Zeitpunkt (Stand 07.01.2021) knapp 200 offenen "Issues" haben mich zudem abgeschreckt mehr Zeit in Jasper zu investieren.
 Hier gibt es auch einen Artikel wo sich jemand massiv über Jasper und seine Benutzerfreundlichkeit beschwert: [Tutonaut.de](https://www.tutonaut.de/freie-alexa-alternative-mit-jasper-vollidioten-ftw/)
 
 ## Entwicklermodus

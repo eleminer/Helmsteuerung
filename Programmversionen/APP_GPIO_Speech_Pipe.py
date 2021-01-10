@@ -67,26 +67,6 @@ try:
                 
         if p.returncode != 0:
             raise CalledProcessError(p.returncode, p.args)
-
-        if "live" in str(msg) and argument=="On":
-            print("live from text")
-            livefeed=0
-            live()
-     
-        if "aus" in str(msg) and argument=="On":
-            print("aus from text")
-            livefeed=1
-            live()
-                               
-        if "auf" in str(msg) and argument=="On":
-            print("auf from text")
-            servoposition=1
-            servo()
-                                
-        if "zu" in str(msg) and argument=="On":
-            print("zu from text")
-            servoposition=0
-            servo()
                 
     def speechSwitch():
         global argument

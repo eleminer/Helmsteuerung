@@ -20,6 +20,3 @@ def run(readable_results, data, rawbuf):
         file = open('/home/pi/Downloads/'+str(1)+'.txt','w')
         file.write("zu\r")
         file.close()
-    
-
-

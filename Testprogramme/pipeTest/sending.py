@@ -32,3 +32,6 @@ def run(readable_results, data, rawbuf):
     if "zu" in readable_results: 
         pipesend("zu")
         print("zu")
+
+
+pipesend("fucking world")

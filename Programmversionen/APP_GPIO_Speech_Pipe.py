@@ -33,50 +33,32 @@ try:
     app = Flask(__name__)
 
     def get_message(fifo: int) -> str:
-    msg_size_bytes = os.read(fifo, 4)
-    msg_size = decode_msg_size(msg_size_bytes)
-    msg_content = os.read(fifo, msg_size).decode("utf8")
-    return msg_content
+        msg_size_bytes = os.read(fifo, 4)
+        msg_size = decode_msg_size(msg_size_bytes)
+        msg_content = os.read(fifo, msg_size).decode("utf8")
+        return msg_content
 
-    def readSpeechArguments():
-        global livefeed, servoposition, argument
-        IPC_FIFO_NAME = "/home/pi/sopareplugin_ipc"
-        os.mkfifo(IPC_FIFO_NAME)
-        try:
-            fifo = os.open(IPC_FIFO_NAME, os.O_RDONLY | os.O_NONBLOCK)
-            try:
-                poll = select.poll()
-                poll.register(fifo, select.POLLIN)
-                try:
-                    while True:
-                        if (fifo, select.POLLIN) in poll.poll(2000):
-                            msg = get_message(fifo)
-                            print(msg)
-                             if "live" in str(msg) and argument=="On":
-                                print("live from text")
-                                livefeed=0
-                                live()
-                    
-                            if "aus" in str(lineList) and argument=="On":
-                                print("aus from text")
-                                livefeed=1
-                                live()
+    def pipeline():
+        global livefeed,argument,servoposition
+        if "live" in str(msg) and argument=="On":
+            print("live from text")
+            livefeed=0
+            live()
+     
+        if "aus" in str(msg) and argument=="On":
+            print("aus from text")
+            livefeed=1
+            live()
+                               
+        if "auf" in str(msg) and argument=="On":
+            print("auf from text")
+            servoposition=1
+            servo()
                                 
-                            if "auf" in str(lineList) and argument=="On":
-                                print("auf from text")
-                                servoposition=1
-                                servo()
-                                
-                            if "zu" in str(lineList) and argument=="On":
-                                print("zu from text")
-                                servoposition=0
-                                servo()
-                finally:
-                    poll.unregister(fifo)
-            finally:
-                os.close(fifo)
-        finally:
-            os.remove(IPC_FIFO_NAME)
+        if "zu" in str(msg) and argument=="On":
+            print("zu from text")
+            servoposition=0
+            servo()
                 
     def speechSwitch():
         global argument
@@ -160,7 +142,7 @@ try:
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.submit(gpio)
         executor.submit(appControl)
-        executor.submit(readSpeechArguments)
+        executor.submit(pipeline)
         executor.shutdown(wait=False)
     
 

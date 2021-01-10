@@ -34,4 +34,4 @@ def run(readable_results, data, rawbuf):
         print("zu")
 
 
-pipesend("fucking world")
+pipesend("hello world")

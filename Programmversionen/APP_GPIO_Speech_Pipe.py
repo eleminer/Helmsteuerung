@@ -10,6 +10,7 @@ from subprocess import Popen
 import subprocess
 import select
 from message import decode_msg_size
+from subprocess import Popen, PIPE, CalledProcessError
 os.environ["DISPLAY"] = ':0'
 camera = PiCamera()
 GPIO.setmode(GPIO.BCM)
@@ -40,6 +41,33 @@ try:
 
     def pipeline():
         global livefeed,argument,servoposition
+        print("pipeline started")
+        with Popen(['python3', '-u', 'receiver.py'], stdout=PIPE, bufsize=1, universal_newlines=True) as p:
+            for line in p.stdout:
+                print(line, end='') # process line here
+                if "live" in str(line) and argument=="On":
+                    print("live from text")
+                    livefeed=0
+                    live()
+     
+                if "aus" in str(line) and argument=="On":
+                    print("aus from text")
+                    livefeed=1
+                    live()
+                                    
+                if "auf" in str(line) and argument=="On":
+                    print("auf from text")
+                    servoposition=1
+                    servo()
+                                        
+                if "zu" in str(line) and argument=="On":
+                    print("zu from text")
+                    servoposition=0
+                    servo()
+                
+        if p.returncode != 0:
+            raise CalledProcessError(p.returncode, p.args)
+
         if "live" in str(msg) and argument=="On":
             print("live from text")
             livefeed=0

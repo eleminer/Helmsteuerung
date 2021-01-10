@@ -19,6 +19,7 @@ Coding Wifi Settings:
     
     
 #### Hier geht es zu einem Video, welches die Funtionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
+#### Hier geht es zu einem Raspberry Pi Image mit aktiviertem Autostart für die Kontrolle mit APP und GPIO. [ImageDownload](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
 ### Update:
 #### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich!Das Manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schrittt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
 #### Im Plugin sollte jedoch die If Abfrage den jeweiligen Kommandos entsprechen!
@@ -446,10 +447,19 @@ Viele Wege führen nach Rom, der einfachste für mich ist jedoch die Windows 10 
  Wichtig: Im Script wurde "ThreadPoolExecuter" benutzt um simultan die GPIO Taster und die App abzufragen. 
  Dieses Modul gibt es nur für Python3, daher ist diese Version nur mit  Python 3 kompatibel und nicht mit Python2!
  
- - 4.--> APP_GPIO_Speech.py
+ - 4.--> APP_GPIO_Speech.py (veraltet!!! siehe Version 5)
  
  Vollversion, läuft ebenfalls nur unter Python3!
  Benötigt Textfile in /home/pi/Downloads/ mit dem Namen 1.txt und Sopare im Hintergrund laufend mit Plugin, welches sich im Ordner "PluginSopare" befindet.
+ 
+ - 5.--> APP_GPIO_Speech_Pipe.py
+ 
+ Vollversion, läuft ebenfalls nur unter Python3!
+ Tauscht Daten zwischen Sopare und dem "Hauptprogramm" mithilfe einer Pipeline aus!
+ Sopare sollte erst nach dem "Hauptprogramm (APP_GPIO_Speech_Pipe) gestartet werden, da dieses die Pipe aufbaut, auf welche das Sopare Plugin zugreift.
+ Das neue Sopare Plugin findet man im Ordner: "PluginSopare" und dann unter "neuesPlugin_mit Pipeline"
+ Diese Version ist deutlich besser geeignet als Version 4 (APP_GPIO_Speech.py).
+ Die Daten werden nicht extra auf die SD Karte geschrieben und sind somit schneller verfügbar, zudem läuft dieses Programm stabiler!
  
  ## Autostart Option für das gewählte Skript
  

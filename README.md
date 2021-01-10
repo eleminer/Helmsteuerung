@@ -227,7 +227,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Mit F6 können wir nun unser Mikrofon auswählen:
   ![](picturesREADME/alsamixer.png)
   
-  Danach noch mit mit der ESC Taste den Alsamixer verlassen.
+  Danach noch mit der ESC Taste den Alsamixer verlassen.
   
   ### Sopare Unit Test
   Als erstes sollte man einen Unit Test durchführen, um zu schauen ob die Installation von Sopare ohne Fehler funktioniert.
@@ -285,7 +285,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Bei dem Servotest wird der Servo auf 90°, 180° und 0° im 3 Sekundentakt gefahren.
   Wichtig: Der Servo wird nicht permanent mit einem PWM Signal versorgt! Da es sonst aufgrund der softwareseitigen Implementierung zu Timing Probleme kommen kann.
   (Zittern des Servos)
-  D.h der Servo wird auf die Position gefahren und dann abgeschaltet, er hält nicht aktiv die Position.
+  D.h. der Servo wird auf die Position gefahren und dann abgeschaltet, er hält nicht aktiv die Position.
   Je nachdem welche Last auf dem Servo liegt kann man dies vernachlässigen, da der Servo aufgrund des Getriebes im ausgeschaltetem Zustand schwer drehbar ist.
   
   Als Alternative könnte man gegebenfalls eine hardwareseitige Servosteuerung vornehmen mithilfe eines Servomotor Treibers.
@@ -297,7 +297,7 @@ Sopare Einstellungen im geklontem Git Verzeichnis von Sopare vornehmen. Das Sopa
   Während diesen 50 Sekunden sollte das Live Bild der Raspberry Pi Kamera sichtbar sein.
   
   Der Display Sleep Mode wird dadurch nicht unterbrochen.
-  D.h der Raspberry geht nach ein paar Minuten ohne Tastatur-/Mauseingabe in einen Sleep Mode, mit schwarzem Bild.
+  D.h. der Raspberry geht nach ein paar Minuten ohne Tastatur-/Mauseingabe in einen Sleep Mode, mit schwarzem Bild.
   Das schwarzes Bild wird von dem Live Feed überdeckt und nach dem Test erscheint wieder das schwarze Bild.
   
   ### Webserver für HTTP Request Kontrolle (APP)
@@ -357,7 +357,7 @@ Die App ist recht einfach aufgebaut, sie besteht aus neun Buttons.
 Davon sind drei Buttons orange, vier rot und zwei gelb.
 
 Die Farben spiegeln Gruppen wieder,
-**orangfarbene Gruppe** ist für die Steuerung der Grundfunktionen zuständig.
+**orangefarbene Gruppe** ist für die Steuerung der Grundfunktionen zuständig.
 
 1. Livebild an bzw. aus
 2. Servo Position ändern (0°/180°)
@@ -392,7 +392,7 @@ Wenn man etwas falsches angelernt hat, dann kann man ebenfalls das komplette Dic
 
 ### Besonderheit der App
 
-In der App wurde der einfachheitshalber die URL fest gesetzt, d.h die App funktioniert nur über den WLAN Hotspot.
+In der App wurde der einfachheitshalber die URL festgesetzt, d.h. die App funktioniert nur über den WLAN Hotspot.
 Eine Benutzung über ein anderes WLAN ist nicht vorgesehen.
 
 Falls gewünscht, kann die URL im main.dart File geändert werden.
@@ -423,7 +423,7 @@ Hier gibt es auch einen Artikel wo sich jemand massiv über Jasper und seine Ben
 
 ## Entwicklermodus
 
-Wenn kein bekanntes Wlan erreichbar ist, wird automisch der Hotspot aktiviert für den App Zugriff.
+Wenn kein bekanntes Wlan erreichbar ist, wird automatisch der Hotspot aktiviert für den App Zugriff.
 Manchmal ist jedoch eine Internetverbindung notwendig um Pakete oder Plugins installieren zu können.
 Wenn der Raspberry sich in Reichweite des Wlans mit der SSID "Coding" befindet, verbindet er sich mit diesem und baut keinen Hotspot auf.
 

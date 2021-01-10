@@ -19,7 +19,7 @@ Coding Wifi Settings:
     
     
 #### Hier geht es zu einem Video, welches die Funktionsweise zeigt: [Video](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
-#### Hier geht es zu einem Raspberry Pi Image mit aktiviertem Autostart für die Kontrolle mit APP und GPIO. [ImageDownload](https://drive.google.com/file/d/19hK0NiqJspJTZMuc9VAi2S3LpeVys6pV/view?usp=sharing)
+#### Hier geht es zu einem Raspberry Pi Image mit aktiviertem Autostart für die Kontrolle mit APP und GPIO. [ImageDownload](https://drive.google.com/file/d/1_e0x5r6ZEDY1K_2J1F2-qaG4Bla2ePTc/view?usp=sharing)
 ### Update:
 #### Aus Zeitgründen wurde eine LightVersion der App hochgeladen, über diese kann das Livebild, der Servo und der Zustand der Spracherkennung gesteuert werden. Anlernen von Befehlen und das Handling vom Dictionary sind damit nicht möglich! Das manuelle Anlernen ist jedoch sehr einfach und wird in diesem Readme ebenfalls erklärt. Hier geht es zur offiziellen Schritt für Schritt Anleitung von Sopare. [SopareAnleitungOffiziell](https://www.bishoph.org/step-by-step-raspberry-pi-offline-voice-recognition-with-sopare/) 
 #### Im Plugin sollte jedoch die If Abfrage den jeweiligen Kommandos entsprechen!

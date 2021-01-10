@@ -108,7 +108,7 @@ Diese Idee wurde jedoch vorerst, aufgrund den damit verbundenen Kosten, verworfe
 
 ***Drucktaster Livebild: GPIO16 und GND***
 
-***Drucktaster Livebild: GPIO20 und GND***
+***Drucktaster Servo: GPIO20 und GND***
 
 Die Drucktaster sind softwareseitig auf Pull-Up eingestellt. D.h. wenn der Pin auf Masse gezogen wird, wird die Aktion ausgelöst.
 
